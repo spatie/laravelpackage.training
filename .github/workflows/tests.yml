@@ -43,6 +43,8 @@ jobs:
 
             - name: Install Composer dependencies
               run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+              env:
+                COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
 
             - name: Prepare the application
               run: |

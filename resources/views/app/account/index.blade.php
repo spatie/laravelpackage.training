@@ -7,7 +7,7 @@
 
     <ul class="mb-6 markup-ul-alt grid gap-1">
         <li><a href="{{ route('password') }}">Change password</a></li>
-        <li><a href="{{ route('github') }}">Configure GitHub access</a></li>
+        {{-- <li><a href="{{ route('github') }}">Configure GitHub access</a></li>--}}
     </ul>
 
     <form

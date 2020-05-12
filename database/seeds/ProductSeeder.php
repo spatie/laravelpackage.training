@@ -10,7 +10,7 @@ class ProductSeeder extends Seeder
         factory(Product::class)->create([
             'type' => Product::TYPE_VIDEOS,
             'name' => 'Only the videos',
-            'paddle_product_id' => '579713',
+            'paddle_product_id' => '593300',
             'price' => 49,
         ]);
     }

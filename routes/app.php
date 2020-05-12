@@ -26,7 +26,9 @@ Route::put('account', [AccountController::class, 'update']);
 Route::get('password', [PasswordController::class, 'index'])->name('password');
 Route::put('password', [PasswordController::class, 'update']);
 
+/*
 Route::get('github', [GithubController::class, 'show'])->name('github');
 Route::get('github/redirect', [GithubController::class, 'redirectTo'])->name('github.redirect');
 Route::get('github/callback', [GithubController::class, 'handleCallback'])->name('github.callback');
 Route::delete('github/disconnect', [GithubController::class, 'disconnect'])->name('github.disconnect');
+*/

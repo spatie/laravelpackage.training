@@ -5,13 +5,11 @@ use App\Http\App\Controllers\Account\GithubController;
 use App\Http\App\Controllers\Account\PasswordController;
 use App\Http\App\Controllers\AfterPaddleSaleController;
 use App\Http\App\Controllers\Licenses\BuyVideoCourseController;
-use App\Http\App\Controllers\Licenses\UpdateLicenseController;
 use App\Http\App\Controllers\PurchasesIndexController;
-use App\Http\App\Controllers\ReleasesController;
 use App\Http\App\Controllers\Videos\VideoCompletionController;
 use App\Http\App\Controllers\Videos\VideosController;
 
-Route::get('licenses', BuyVideoCourseController::class)->name('licenses');
+Route::get('buy-course', BuyVideoCourseController::class)->name('buy');
 Route::get('purchases', PurchasesIndexController::class)->name('purchases');
 
 Route::get('after-paddle-sale', AfterPaddleSaleController::class);

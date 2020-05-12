@@ -1,9 +1,6 @@
 <nav>
     <ul class="nav">
         @guest
-            <x-navigation-item :href="route('features')">Features</x-navigation-item>
-            <x-navigation-item :href="route('videos')">Videos</x-navigation-item>
-            <x-navigation-item :href="route('docs')">Docs</x-navigation-item>
             <x-navigation-item :href="route('login')">Login</x-navigation-item>
             <li>
                 <a class="button block" href="/register">
@@ -13,7 +10,7 @@
         @endguest
 
         @auth
-            <x-navigation-item :href="route('licenses')">Licenses</x-navigation-item>
+            <x-navigation-item :href="route('buy')">Buy</x-navigation-item>
             @if(auth()->user()->canAccessVideos())
                 <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>
             @else

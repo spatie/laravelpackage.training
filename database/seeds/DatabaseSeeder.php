@@ -8,11 +8,8 @@ class DatabaseSeeder extends Seeder
     {
         $this
             ->call(UserSeeder::class)
-            ->call(ReleaseSeeder::class)
             ->call(ProductSeeder::class)
-            ->call(LicenseSeeder::class)
             ->call(EmailListSeeder::class)
-            ->call(DocumentationSeeder::class)
             ->call(VideoSeeder::class);
     }
 }

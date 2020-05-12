@@ -13,7 +13,6 @@ class CreatePurchasesTable extends Migration
 
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('license_id')->nullable();
 
             $table->uuid('uuid');
             $table->string('payment_method');
@@ -26,7 +25,6 @@ class CreatePurchasesTable extends Migration
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('product_id')->references('id')->on('products');
-            $table->foreign('license_id')->references('id')->on('licenses');
 
             $table->timestamps();
         });

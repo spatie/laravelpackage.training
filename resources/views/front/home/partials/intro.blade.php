@@ -1,8 +1,8 @@
 <div class="py-16 grid lg:cols-2 gap-16 items-center">
     <div>
         <header class="text-white">
-            <p class="font-serif font-bold text-5xl leading-tight">Cut the costs of <br>a growing audience</p>
-            <h1 class="mt-2 markup-baseline text-orange-400 opacity-100">Self-host your email marketing software</h1>
+            <p class="font-serif font-bold text-5xl leading-tight">Learn how to create a Laravel package</p>
+            <h1 class="mt-2 markup-baseline text-orange-400 opacity-100">Become the next Spatie</h1>
         </header>
 
         <p class="mt-12 text-xl text-white max-w-3xl">

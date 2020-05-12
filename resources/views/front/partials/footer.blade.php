@@ -29,17 +29,7 @@
             <div class="text-light-900">
                 <ul class="grid gap-2 text-xl border-l-4 border-blue-900 pl-4">
                     <li>
-                        <a href="{{ route('docs') }}" class="text-light-900 hover:text-white">
-                            Documentation
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/spatie/mailcoach-support/issues" class="text-light-900 hover:text-white">
-                            Discuss on GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:mailcoach@spatie.be" class="text-light-900 hover:text-white">
+                        <a href="mailto:info@spatie.be" class="text-light-900 hover:text-white">
                             Email&nbsp;us
                         </a>
                     </li>
@@ -49,8 +39,8 @@
             <div class="grid h-full items-end">
                 <ul class="grid md:justify-end gap-3">
                     <li>
-                        <a href="https://twitter.com/getmailcoach" class="grid cols-auto gap-3 items-center justify-start text-light-500 hover:text-light-600">
-                            Follow @getmailcoach
+                        <a href="https://twitter.com/spatie_be" class="grid cols-auto gap-3 items-center justify-start text-light-500 hover:text-light-600">
+                            Follow @spatie_be
                                     <i class="fab fa-twitter text-lg"></i>
                         </a>
                     </li>
@@ -65,7 +55,6 @@
         </div>
 
         <ul class="mt-24 grid cols-auto gap-8 items-center justify-start md:justify-center text-xs ">
-            <li><a class="text-light-500 hover:text-light-600" href="{{ route('roadmap') }}">Roadmap</a></li>
             <li><a class="text-light-500 hover:text-light-600" href="{{ route('termsOfUse') }}">Terms of use</a></li>
             <li><a class="text-light-500 hover:text-light-600" href="{{ route('privacy') }}">Privacy &amp; cookie policy</a></li>
             <li class="">

@@ -91,6 +91,6 @@ class Video extends Model
 
     public function getFormattedDescriptionAttribute()
     {
-        return (new CommonMarkConverter())->convertToHtml($this->description);
+        return (new CommonMarkConverter())->convertToHtml($this->description ?? '');
     }
 }

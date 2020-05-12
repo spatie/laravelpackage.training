@@ -8,8 +8,6 @@ $factory->define(Product::class, function (Faker $faker) {
     return [
         'name' => $faker->word,
         'type' => $faker->randomElement([
-            Product::TYPE_STANDARD,
-            Product::TYPE_STANDARD_RENEWAL,
             Product::TYPE_VIDEOS,
         ]),
         'price' => $faker->numberBetween(50, 150),

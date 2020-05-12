@@ -11,17 +11,17 @@ use Tests\TestCase;
 class UserTest extends TestCase
 {
     /** @test */
-    public function it_can_check_if_it_has_a_valid_video_license()
+    public function it_can_check_if_it_has_a_valid_video_purchase()
     {
         /** @var \App\Models\User $user */
         $user = factory(User::class)->create();
 
         $this->assertFalse($user->canAccessVideos());
 
-        $standardLicense = factory(Purchase::class)->create([
-            'product_id' => factory(Product::class)->create(['type' => Product::TYPE_STANDARD]),
+        factory(Purchase::class)->create([
+            'user_id' => $user->id,
+            'product_id' => factory(Product::class)->create(['type' => Product::TYPE_VIDEOS])->id,
         ]);
-        $user->licenses()->save($standardLicense);
 
         $this->assertTrue($user->canAccessVideos());
     }

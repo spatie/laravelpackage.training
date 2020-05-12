@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use App\Models\Concerns\HasUuid;
-use App\Support\GitHubApi\GitHubApi;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -22,11 +21,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'admin' => 'boolean',
     ];
-
-    public function licenses(): HasMany
-    {
-        return $this->hasMany(License::class)->orderByDesc('created_at');
-    }
 
     public function activeLicenses(): HasMany
     {
@@ -53,7 +47,7 @@ class User extends Authenticatable
         return $this
             ->purchases()
             ->whereHas('product', function (Builder $query) {
-                $query->whereIn('type', [Product::TYPE_VIDEOS, Product::TYPE_STANDARD]);
+                $query->whereIn('type', [Product::TYPE_VIDEOS]);
             })
             ->exists();
     }
@@ -63,20 +57,8 @@ class User extends Authenticatable
         return $this->videos->contains($video);
     }
 
-    public function hasAccessToRepo(): bool
+    public function hasLoggedInViaGitHub(): bool
     {
         return ! is_null($this->github_username);
-    }
-
-    public function revokeAccessToRepo(): self
-    {
-        app(GitHubApi::class)->revokeAccessToMailcoachRepo($this->github_username);
-
-        auth()->user()->update([
-            'github_username' => null,
-            'github_id' => null,
-        ]);
-
-        return $this;
     }
 }

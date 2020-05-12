@@ -13,6 +13,7 @@ class GitHubApi
         $this->client = $client;
     }
 
+    /*
     public function inviteToMailcoachRepo(string $gitHubUsername)
     {
         $this->client->repo()->collaborators()->add(
@@ -31,4 +32,5 @@ class GitHubApi
             $gitHubUsername,
         );
     }
+    */
 }

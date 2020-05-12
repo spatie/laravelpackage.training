@@ -2,15 +2,10 @@
 
 namespace Tests\Feature;
 
-use App\Exceptions\CouldNotHandlePaymentSucceeded;
-use App\Models\License;
 use App\Models\Product;
-use App\Models\Purchase;
 use App\Models\User;
-use App\Support\Paddle\ProcessPaymentSucceededJob;
 use Spatie\TestTime\TestTime;
 use Spatie\WebhookClient\Exceptions\WebhookFailed;
-use Spatie\WebhookClient\Models\WebhookCall;
 use Tests\TestCase;
 
 class PaddleWebhookTest extends TestCase
@@ -33,90 +28,25 @@ class PaddleWebhookTest extends TestCase
     }
 
     /** @test */
-    public function it_can_process_a_package_purchase_webhook_coming_from_paddle()
+    public function it_can_process_a_video_purchase_webhook_coming_from_paddle()
     {
-        [$product, $webhookAttributes] = $this->getProductAndWebhookAttributesForProduct(Product::TYPE_STANDARD);
+        [$product, $webhookAttributes] = $this->getProductAndWebhookAttributesForProduct(Product::TYPE_VIDEOS);
 
         $this
             ->post('paddle-webhooks', $webhookAttributes)
             ->assertSuccessful();
 
-        $this->assertCount(1, License::get());
-        $license = License::first();
-
         $this->assertDatabaseHas('purchases', [
             'user_id' => $this->user->id,
             'product_id' => $product->id,
-            'license_id' => $license->id,
-        ]);
-
-        $this->assertDatabaseHas('licenses', [
-            'user_id' => $this->user->id,
-            'product_id' => $product->id,
-            'expires_at' => now()->addYear()->format('Y-m-d H:i:s'),
         ]);
     }
 
-    /** @test */
-    public function it_can_process_a_package_renewal_webhook_coming_from_paddle()
-    {
-        [$license, $product, $webhookAttributes] = $this->getProductAndWebhookAttributesForRenewal(Product::TYPE_STANDARD_RENEWAL);
-        $this->assertCount(0, Purchase::all());
-        $originalExpiresAt = $license->expires_at;
-
-        $webhookCall = WebhookCall::create(['name' => '', 'payload' => $webhookAttributes]);
-        (new ProcessPaymentSucceededJob($webhookCall))->handle();
-
-        $this->assertCount(1, Purchase::all());
-        $this->assertDatabaseHas('purchases', [
-            'user_id' => $this->user->id,
-            'product_id' => $product->id,
-            'license_id' => $license->id,
-        ]);
-
-        $license = $license->refresh();
-        $newExpiresAt = $license->expires_at;
-
-        $this->assertEquals(1, $originalExpiresAt->diffInYears($newExpiresAt));
-        $this->assertNull($license->expiration_warning_mail_sent_at);
-        $this->assertNull($license->expiration_mail_sent_at);
-    }
-
-    /** @test */
-    public function it_can_process_a_video_purchase_webhook_coming_from_paddle()
-    {
-        [$product, $webhookAttributes] = $this->getProductAndWebhookAttributesForProduct(Product::TYPE_VIDEOS);
-        $this->assertCount(0, Purchase::all());
-
-        $webhookCall = WebhookCall::create(['name' => '', 'payload' => $webhookAttributes]);
-        (new ProcessPaymentSucceededJob($webhookCall))->handle();
-
-        $this->assertCount(1, Purchase::all());
-        $this->assertDatabaseHas('purchases', [
-            'user_id' => $this->user->id,
-            'product_id' => $product->id,
-            'license_id' => null,
-        ]);
-        $this->assertCount(0, License::all());
-    }
-
-    /** @test */
-    public function it_will_throw_an_exception_if_passthrough_is_not_found()
-    {
-        [$license, $product, $webhookAttributes] = $this->getProductAndWebhookAttributesForRenewal(Product::TYPE_STANDARD_RENEWAL);
-        $webhookAttributes['passthrough'] = '';
-
-        $webhookCall = WebhookCall::create(['name' => '', 'payload' => $webhookAttributes]);
-
-        $this->expectException(CouldNotHandlePaymentSucceeded::class);
-
-        (new ProcessPaymentSucceededJob($webhookCall))->handle();
-    }
 
     /** @test */
     public function it_will_only_create_one_license_if_a_webhook_with_the_same_alert_id_is_received_twice()
     {
-        [$product, $webhookAttributes] = $this->getProductAndWebhookAttributesForProduct(Product::TYPE_STANDARD);
+        [$product, $webhookAttributes] = $this->getProductAndWebhookAttributesForProduct(Product::TYPE_VIDEOS);
 
         $this
             ->post('paddle-webhooks', $webhookAttributes)
@@ -126,7 +56,7 @@ class PaddleWebhookTest extends TestCase
             ->post('paddle-webhooks', $webhookAttributes)
             ->assertSuccessful();
 
-        $this->assertCount(1, License::get());
+        $this->assertCount(1, Product::get());
     }
 
     /** @test */
@@ -153,30 +83,6 @@ class PaddleWebhookTest extends TestCase
         ]);
 
         return [$product, $webhookAttributes];
-    }
-
-    protected function getProductAndWebhookAttributesForRenewal(string $packageType): array
-    {
-        $license = factory(License::class)->create([
-            'expires_at' => now()->subWeek(),
-            'user_id' => $this->user->id,
-            'expiration_warning_mail_sent_at' => now(),
-            'expiration_mail_sent_at' => now(),
-
-        ]);
-
-        $webhookAttributes = $this->getWebhookAttributes();
-
-        $webhookAttributes['passthrough'] = json_encode([
-            'license' => $license->key,
-        ]);
-
-        $product = factory(Product::class)->create([
-            'paddle_product_id' => $this->getWebhookAttributes()['product_id'],
-            'type' => $packageType,
-        ]);
-
-        return [$license, $product, $webhookAttributes];
     }
 
     protected function getWebhookAttributes()

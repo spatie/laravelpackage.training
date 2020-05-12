@@ -25,7 +25,7 @@ class VideosControllerTest extends TestCase
     public function it_can_list_videos()
     {
         $user = (new UserFactory())
-            ->withPurchase(Product::TYPE_STANDARD)
+            ->withPurchase(Product::TYPE_VIDEOS)
             ->create();
 
         $video = factory(Video::class)->create();
@@ -43,7 +43,7 @@ class VideosControllerTest extends TestCase
     public function it_can_show_videos()
     {
         $user = (new UserFactory())
-            ->withPurchase(Product::TYPE_STANDARD)
+            ->withPurchase(Product::TYPE_VIDEOS)
             ->create();
 
         /** @var \App\Models\Video $video */

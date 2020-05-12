@@ -3,8 +3,6 @@
 namespace App\Support\Paddle;
 
 use App\Actions\CreatePurchaseAction;
-use App\Actions\CreatePurchaseAndNewLicenseAction;
-use App\Actions\CreatePurchaseAndRenewLicenseAction;
 use App\Exceptions\CouldNotHandlePaymentSucceeded;
 use App\Models\Product;
 use App\Models\Purchase;
@@ -31,24 +29,6 @@ class ProcessPaymentSucceededJob extends ProcessWebhookJob
 
         if (!$product = Product::where('paddle_product_id', $paddlePayload->product_id)->first()) {
             throw CouldNotHandlePaymentSucceeded::productNotFound($this->webhookCall);
-        };
-
-
-        if (in_array($product->type, [
-            Product::TYPE_STANDARD,
-        ])) {
-            (new CreatePurchaseAndNewLicenseAction())->execute($user, $product, $paddlePayload);
-
-            return;
-        }
-
-        if (in_array($product->type, [
-            Product::TYPE_STANDARD_RENEWAL,
-        ])) {
-            (new CreatePurchaseAndRenewLicenseAction())->execute($user, $product, $paddlePayload);
-
-
-            return;
         }
 
         if ($product->type === Product::TYPE_VIDEOS) {

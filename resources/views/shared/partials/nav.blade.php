@@ -13,10 +13,7 @@
             <x-navigation-item :href="route('buy')">Buy</x-navigation-item>
             @if(auth()->user()->canAccessVideos())
                 <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>
-            @else
-                <x-navigation-item :href="route('videos')">Videos</x-navigation-item>
             @endif
-            <x-navigation-item :href="route('docs')">Docs</x-navigation-item>
             <x-navigation-item :href="route('purchases')">Purchases</x-navigation-item>
 
             <li>

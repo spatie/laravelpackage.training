@@ -1,11 +1,7 @@
 <?php
 
-use App\Http\Front\Controllers\DocumentationController;
-use App\Http\Front\Controllers\DownloadLatestController;
 use App\Http\Front\Controllers\GitHubWebhookController;
 use App\Http\Front\Controllers\HomeController;
-use App\Http\Front\Controllers\IsValidLicenseController;
-use App\Http\Front\Controllers\RoadmapController;
 use App\Http\Front\Controllers\SubscribeToEmailListController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;

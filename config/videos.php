@@ -17,7 +17,7 @@ return [
         [
             'title' => 'Creating a Laravel Package',
             'videos' => [
-                // starting a Laravel package using the skeleton
+                '418231440', // starting a Laravel package using the skeleton
                 // exploring the service provider
                 // running tests locally using Orchestra
                 // running tests on GitHub actions (+ supporting multiple laravel versions)
@@ -26,17 +26,17 @@ return [
                 // using views
                 // adding routes
                 // adding a facade
-                // creating a simple package
+                // creating a simple package (files count on disk, records in db, scheduled job, views om ze te zien, config file om aantal dagen te configuren)
             ]
         ],
         [
             'title' => 'Source diving Spatie packages',
             'videos' => [
-                '417225584', // Tail
-                '417225584', // Flash
-                '417225584', // Backup
-                '417225584', // Response cache
-                '417225584', // Mailcoach,
+                 // Tail
+                 // Flash
+                 // Backup
+                 // Response cache
+                 // Mailcoach,
             ]
         ]
     ]

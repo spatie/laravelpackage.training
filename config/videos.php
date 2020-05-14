@@ -19,13 +19,12 @@ return [
             'videos' => [
                 '418231440', // starting a Laravel package using the skeleton
                 // exploring the service provider
-                // running tests locally using Orchestra
                 // running tests on GitHub actions (+ supporting multiple laravel versions)
+                // installing an unreleased package in a full Laravel app
                 // reading config
                 // using migrations
                 // using views
                 // adding routes
-                // adding a facade
                 // creating a simple package (files count on disk, records in db, scheduled job, views om ze te zien, config file om aantal dagen te configuren)
             ]
         ],

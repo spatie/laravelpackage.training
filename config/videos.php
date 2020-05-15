@@ -18,24 +18,23 @@ return [
             'title' => 'Creating a Laravel Package',
             'videos' => [
                 '418231440', // starting a Laravel package using the skeleton
-                // exploring the service provider
-                // running tests on GitHub actions (+ supporting multiple laravel versions)
-                // installing an unreleased package in a full Laravel app
-                // reading config
-                // using migrations
-                // using views
-                // adding routes
-                // creating a simple package (files count on disk, records in db, scheduled job, views om ze te zien, config file om aantal dagen te configuren)
+                '418391798', // exploring the service provider
+                '418471348', // running tests on GitHub actions
+                '418510042', // installing an unreleased package in a full Laravel app
+                '418813035', // reading config
+                '418904075', // using migrations
+                '419039265', // using routes, controllers and views
+                '418769489', // create a package together
             ]
         ],
         [
             'title' => 'Source diving Spatie packages',
             'videos' => [
-                 // Tail
-                 // Flash
-                 // Backup
-                 // Response cache
-                 // Mailcoach,
+                // Tail
+                // Flash
+                // Backup
+                // Response cache
+                // Mailcoach,
             ]
         ]
     ]

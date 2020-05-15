@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 
 class UpdateVideosCommand extends Command
 {
-    protected $signature = 'mailcoach:update-videos';
+    protected $signature = 'video-course:update-videos';
 
     protected $description = 'Update the videos with the latest from Vimeo.';
 

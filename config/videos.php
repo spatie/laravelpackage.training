@@ -20,6 +20,7 @@ return [
                 '418231440', // starting a Laravel package using the skeleton
                 '418391798', // exploring the service provider
                 '418471348', // running tests on GitHub actions
+                '419127047', // using MySQL when running tests
                 '418510042', // installing an unreleased package in a full Laravel app
                 '418813035', // reading config
                 '418904075', // using migrations

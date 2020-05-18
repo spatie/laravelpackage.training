@@ -36,6 +36,7 @@ return [
                 // Backup
                 // Response cache
                 // Mailcoach,
+                '419946519' // multitenancy
             ]
         ]
     ]

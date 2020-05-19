@@ -12,6 +12,7 @@ return [
                 '417227634', // enforcing a code style
                 '417227966', // publishing a package
                 '417228265', // creating a new release
+                '420346515', // Merging a small PR
             ]
         ],
         [

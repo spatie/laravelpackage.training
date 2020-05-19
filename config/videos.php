@@ -33,11 +33,10 @@ return [
             'title' => 'Source diving Spatie packages',
             'videos' => [
                 '419333727', // Tail
-                '419946519' // multitenancy
                 '???', // collection macros
                 '???', // Response cache
-                // Backup
-                , // Medialibrary,
+                '???', // Medialibrary,
+                '419946519' // multitenancy
             ]
         ]
     ]

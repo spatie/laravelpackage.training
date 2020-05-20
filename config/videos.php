@@ -26,17 +26,17 @@ return [
                 '418813035', // reading config
                 '418904075', // using migrations
                 '419039265', // using routes, controllers and views
-                '418769489', // create a package together
+                '418769489', // creating a package together
             ]
         ],
         [
             'title' => 'Source diving Spatie packages',
             'videos' => [
                 '419333727', // Tail
-                '420789034', // collection macros
+                '420789034', // Collection macros
+                '420809280', // Medialibrary,
                 '420606741', // Response cache
-                '???', // Medialibrary,
-                '419946519' // multitenancy
+                '419946519' // Multitenancy
             ]
         ]
     ]

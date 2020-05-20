@@ -34,7 +34,7 @@ return [
             'videos' => [
                 '419333727', // Tail
                 '???', // collection macros
-                '???', // Response cache
+                '420606741', // Response cache
                 '???', // Medialibrary,
                 '419946519' // multitenancy
             ]

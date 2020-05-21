@@ -23,8 +23,8 @@
                     <li class="pb-3">Running the tests on GitHub actions</li>
                     <li class="pb-3">Fixing code style issues using GitHub Actions </li>
                     <li class="pb-3">Supporting multiple PHP versions</li>
-                    <li class="pb-3">Using semver </li>
-                    <li class="pb-3">Adding a changelog</li>
+                    <li class="pb-3">Using semantic versioning </li>
+                    <li class="pb-3">Keeping a changelog</li>
                     <li class="pb-3">Registering the package on Packagist</li>
                     <li class="pb-3">Publishing a new release on GitHub</li>
                     <li class="pb-3">How to take care of community contributions</li>

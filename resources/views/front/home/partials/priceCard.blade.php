@@ -15,7 +15,7 @@
                 <span class="uppercase tracking-widest">
                     Instead of
                 </span>
-                <span class="currency">$</span><del class="font-bold tracking-widest">129</del>
+                <span class="currency">$</span><del class="font-bold tracking-widest">149</del>
             </p>
         </div>
 

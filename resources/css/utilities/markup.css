@@ -35,8 +35,8 @@
 
 .markup h1,
 .markup-h1 {
-    @apply font-serif;
     @apply font-bold;
+    @apply font-serif;
     @apply text-4xl;
     @apply leading-tight;
 }
@@ -56,7 +56,7 @@
 }
 
 .markup-baseline {
-    opacity: 0.6;
+    opacity: .7;
     @apply text-xl;
     @apply font-medium;
     @apply mt-1;
@@ -112,14 +112,14 @@
     @apply absolute;
     @apply left-0;
     content: counter(customOl);
-    @apply bg-light-900;
+    @apply bg-blue-500;
     @apply rounded-full;
     @apply flex-none;
     @apply flex;
     @apply items-center;
     @apply justify-center;
     @apply font-semibold;
-    @apply text-blue-500;
+    @apply text-white;
     font-size: 0.65em;
     width: 1.5em;
     height: 1.5em;
@@ -290,5 +290,9 @@
     .markup-cols-2 {
         column-count: 2;
         column-gap: 4rem;
+    }
+
+    .markup-cols-2 li {
+        break-inside: avoid;
     }
 }

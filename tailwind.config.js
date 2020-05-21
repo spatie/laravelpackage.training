@@ -123,6 +123,7 @@ module.exports = {
         }
     },
     variants: {
+        opacity: ["responsive", "hover", "focus", "group-hover"],
         textColor: ["responsive", "hover", "focus", "group-hover"],
         boxShadow: ["responsive", "hover", "focus", "focus-within"],
         backgroundColor: ["responsive", "hover", "focus", "group-hover"],

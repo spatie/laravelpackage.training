@@ -10,12 +10,13 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title') - Mailcoach</title>
+        <title>@yield('title') - Laravel Package Training</title>
         <meta name="description" content="@yield('description')">
         <link rel="canonical" href="{{ url()->current() }}"/>
 
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;display=swap">
+        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -29,7 +30,7 @@
         content="@yield('description')"/>
         <meta name="twitter:image" content="https://laravelpackage.training/images/social-card.jpg"/>
 
-        <meta property="og:site_name" content="Mailcoach">
+        <meta property="og:site_name" content="Laravel Package Training">
         <meta property="og:locale" content="en_US">
         <meta property="og:url" content="{{ url()->current() }}"/>
         <meta property="og:type" content="product"/>
@@ -40,7 +41,7 @@
 
         <script src="/js/alpine.js" defer></script>
     </head>
-    <body class="flex flex-col w-full min-h-screen bg-blue-100">
+    <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')
 
         <header class="layout-col z-10">
@@ -55,7 +56,6 @@
 
         @include('front.partials.footer')
 
-        @include('front.partials.json-ld')
         @include('shared.partials.gtm-body')
     </body>
 </html>

@@ -22,7 +22,7 @@
         </p>
     @else
         <p class="text-light-500 text-xs">
-            Subscribe to follow project updates, nothing else.
+            Subscribe for course updates and extra content, nothing else.
         </p>
     @enderror
 

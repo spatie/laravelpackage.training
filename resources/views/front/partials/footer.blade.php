@@ -1,17 +1,10 @@
-<footer class="flex-1 bg-blue-800">
+<footer class="flex-1 border-t border-blue-700">
     <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute inset-0">
-            <img alt="Mailcoach newsletter software background — painting from John Charles Maggs" loading="eager" class="absolute w-full h-full" srcset="/images/footer-3000.jpg 3000w,
-            /images/footer-2000.jpg 2000w,
-            /images/footer-1000.jpg 1000w" sizes="100vw" src="/images/footer-3000.jpg" style="object-fit: cover; object-position: bottom center;" alt="">
-        </div>
-
-        <div class="absolute inset-0"
-        style="background-image: linear-gradient(to bottom, rgba(11, 38, 66, 1), rgba(11, 38, 66, .75))">
-        </div>
+        <img loading="eager" class="opacity-50 absolute left-0 w-2/3 h-auto" src="/images/footer.jpg" style="top:25%; object-fit: cover; object-position: top center;" alt="">
+        <div class="absolute inset-0 bg-blue-700 opacity-75"> </div>
     </div>
 
-    <div class="layout-col pt-32 pb-8">
+    <div class="layout-col pt-16 pb-8">
         <div class="mt-12 grid md:cols-2 items-stretch gapx-16 gapy-4">
             <div class="text-light-900">
                 <h3 class="markup-h1 mt-0">
@@ -27,10 +20,20 @@
             </div>
 
             <div class="text-light-900">
-                <ul class="grid gap-2 text-xl border-l-4 border-blue-900 pl-4">
+                <ul class="grid gap-2 text-xl border-l-4 border-light-300 pl-4">
                     <li>
                         <a href="mailto:info@spatie.be" class="text-light-900 hover:text-white">
                             Email&nbsp;us
+                        </a>
+                    </li>
+                     <li>
+                        <a href="https://twitter.com/spatie_be">
+                            Follow @spatie_be
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCUBWS4xOYoLg7gduZe-vUog">
+                            Subscribe on YouTube
                         </a>
                     </li>
                 </ul>
@@ -38,18 +41,7 @@
 
             <div class="grid h-full items-end">
                 <ul class="grid md:justify-end gap-3">
-                    <li>
-                        <a href="https://twitter.com/spatie_be" class="grid cols-auto gap-3 items-center justify-start text-light-500 hover:text-light-600">
-                            Follow @spatie_be
-                                    <i class="fab fa-twitter text-lg"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCUBWS4xOYoLg7gduZe-vUog" class="grid cols-auto gap-3 items-center justify-start text-light-500 hover:text-light-600">
-                            Subscribe on YouTube
-                                    <i class="fab fa-youtube text-lg"></i>
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
         </div>

@@ -6,14 +6,14 @@
         </header>
 
         <p class="mt-12 text-xl text-white max-w-3xl">
-            Having produced 200 packages with more than 90 million downloads, we know what we talk about. 
+            Having produced 200 packages with more than 75 million downloads, we know what we talk about.
         </p>
          <p class="mt-4 text-xl text-white max-w-3xl">
-            Dive in the mind of the team that brought you quality packages like 
-            <code class="text-lg opacity-75">laravel-permission</code>, 
-            <code class="text-lg opacity-75">laravel-backup</code>, 
-            <code class="text-lg opacity-75">laravel-medialibrary</code>, 
-            <code class="text-lg opacity-75">browsershot</code> 
+            Dive in the mind of the team that brought you quality packages like
+             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission">laravel-permission</a></code>,
+             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
+             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a></code>,
+             <code class="text-lg opacity-75"><a href="https://github.com/spatie/browsershot">browsershot</a></code>
             and learn how to program, test and maintain your own packages.
         </p>
     </div>

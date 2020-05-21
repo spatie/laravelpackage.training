@@ -32,7 +32,7 @@
             <li>
                 <div>
                     Building a PHP package
-                    <div class="text-xs opacity-75">PHPUnit, Github actions, Semver, Packagist, …</div>
+                    <div class="text-xs opacity-75">Basic structure, testing, GitHub actions, Packagist, …</div>
                 </div>
             </li>
             <li>
@@ -43,13 +43,13 @@
             </li>
             <li>
                 <div>
-                    Source diving Spatie packages
+                    Source dive Spatie packages
                     <div class="text-xs opacity-75">Get a tour of real life examples</div>
                 </div>
             </li>
-        
+
         </ul>
-        
+
         <p class="mt-4">
             <a class="markup-link" href="#toc">See the entire table of contents</a>
         </p>

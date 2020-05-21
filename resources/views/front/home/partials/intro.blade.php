@@ -1,14 +1,14 @@
 <div class="py-16 grid lg:cols-2 gap-16 items-center">
-    <div>
+    <div class="mx-auto max-w-3xl">
         <header class="text-white">
             <p class="font-bold font-serif text-5xl leading-tight">Learn how to create <br>a Laravel package</p>
             <h1 class="mt-2 markup-baseline text-orange-400 opacity-100 text-2xl">Become the next package maestro</h1>
         </header>
 
-        <p class="mt-12 text-xl text-white max-w-3xl">
+        <p class="mt-12 text-xl text-white">
             Having produced <a href="https://packagist.org/?query=spatie">200 packages</a> with more than 75 million downloads in total, we know what we talk about.
         </p>
-         <p class="mt-4 text-xl text-white max-w-3xl">
+         <p class="mt-4 text-xl text-white">
             Dive in the mind of the team that brought you quality packages like
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission">laravel-permission</a></code>,
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
@@ -19,7 +19,7 @@
     </div>
 
     <div class="flex justify-center xl:-mr-32" x-data="{ open: false }">
-        <div class="w-full max-w-2xl">
+        <div class="w-full max-w-3xl">
             <div role="button" class="aspect-16x9" @click="open = true">
                 <div class="group absolute inset-0 grid place-center bg-blue-500 rounded-t shadow-xl | lg:rounded">
                     <img alt="" class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100" src="/images/intro.jpg">

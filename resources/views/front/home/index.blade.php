@@ -13,7 +13,7 @@
             <section class="layout-col">
                 @include('front.home.partials.intro')
 
-                <div class="mx-auto -mt-24 grid w-full max-w-xl z-10 shadow-2xl rounded-b | md:max-w-none | md:mt-0 lg:rounded">
+                <div class="mx-auto grid w-full max-w-lg z-10 shadow-2xl rounded | md:max-w-none">
                     @include('front.home.partials.priceCard')
                 </div>
             </section>
@@ -24,16 +24,11 @@
             </section>
         </div>
 
-        <div class="flex justify-center">
-            <button class="button text-3xl px-12 -mb-8 z-10 shadow-xl bg-orange-500">
-                <i class="fas fa-play text-orange-200 mr-3"></i>
-                Start learning!
-            </button>
-        </div>
+        @include('front.home.partials.cta')
 
         <div class="py-24 bg-blue-50">
 
-            <img loading="lazy" style="opacity: 0.025" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.jpg">
+            <img loading="lazy" style="opacity: 0.035" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.jpg">
 
             <section class="layout-col">
                 @include('front.home.partials.instructor')

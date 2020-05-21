@@ -4,6 +4,6 @@
     </span>
     <span class="ml-4 text-xl font-bold leading-tight">
         Laravel Package Training
-        <span class="absolute top-full left-0 text-xs font-normal opacity-50">by <span class="font-semibold tracking-wider">SPATIE</span></span>
+        <span class="md:absolute top-full left-0 text-xs font-normal opacity-50">by <span class="font-semibold tracking-widest">SPATIE</span></span>
     </span>
 </a>

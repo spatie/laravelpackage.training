@@ -1,17 +1,19 @@
-<header class="mb-12">
-    <h2 class="markup-h1">Course overview</h2>
-    <p class="markup-baseline">30 hands-on videos</p>
-</header>
+<div class="max-w-3xl mx-auto | lg:ml-0">
+    <header class="mb-12">
+        <h2 class="markup-h1">Course overview</h2>
+        <p class="markup-baseline">30 hands-on videos</p>
+    </header>
 
-<p class="text-lg max-w-2xl">
-    For all functionality that is added to a package, you'll learn how to automatically test it, both locally and via GitHub Actions.
-    This way you can build a beautiful and maintainable package that your co-workers, clients, and the community can rely on.
-</p>
-<p class="mt-4 text-lg max-w-2xl">
-    All videos are available in our online course environment, <br>where you can track your progress.
-</p>
+    <p class="text-lg">
+        For all functionality that is added to a package, you'll learn how to automatically test it, both locally and via GitHub Actions.
+        This way you can build a beautiful and maintainable package that your co-workers, clients, and the community can rely on.
+    </p>
+    <p class="mt-4 text-lg">
+        All videos are available in our online course environment, <br>where you can track your progress.
+    </p>
+</div>
 
-<ol class="mt-12 grid gapy-8 markup-ol">
+<ol class="max-w-3xl mx-auto mt-12 grid gapy-8 markup-ol | lg:max-w-none">
     <li class="pt-8 text-xl">
         <div class="flex-grow">
             <p class="markup-h2">Building a framework agnostic PHP package</p>

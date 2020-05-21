@@ -26,7 +26,7 @@
         </p>
     </div>
 
-    <div class="flex-1 p-12 bg-gray-100 grid" style="align-content: center">
+    <div class="flex-1 p-12 bg-gray-100 flex flex-col items-center justify-center">
         <h2 class="markup-h2">What you'll learn:</h2>
         <ul class="mt-4 markup-ul grid gap-4">
             <li>
@@ -48,10 +48,9 @@
                 </div>
             </li>
 
-        </ul>
-
-        <p class="mt-4">
-            <a class="markup-link" href="#toc">See the entire table of contents</a>
-        </p>
+            <p class="mt-4">
+                <a class="markup-link" href="#toc">See the entire table of contents</a>
+            </p>
+        </div>
     </div>
 </div>

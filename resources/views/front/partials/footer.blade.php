@@ -5,7 +5,7 @@
     </div>
 
     <div class="layout-col pt-16 pb-8">
-        <div class="mt-12 grid md:cols-2 items-stretch gapx-16 gapy-4">
+        <div class="max-w-3xl mx-auto mt-12 grid md:cols-2 items-stretch gapx-16 gapy-4 | lg:max-w-none">
             <div class="text-light-900">
                 <h3 class="markup-h1 mt-0">
                     Need more info?
@@ -14,7 +14,7 @@
             </div>
 
             <div class="grid h-full gap-6" style="align-content: space-between">
-                <div class="md:mt-4">
+                <div class="mb-6 md:mt-4">
                     @include('front.partials.newsletter')
                 </div>
             </div>
@@ -38,15 +38,9 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="grid h-full items-end">
-                <ul class="grid md:justify-end gap-3">
-                   
-                </ul>
-            </div>
         </div>
 
-        <ul class="mt-24 grid cols-auto gap-8 items-center justify-start md:justify-center text-xs ">
+        <ul class="mt-24 grid cols-auto gap-8 items-center justify-center text-xs ">
             <li><a class="text-light-500 hover:text-light-600" href="{{ route('termsOfUse') }}">Terms of use</a></li>
             <li><a class="text-light-500 hover:text-light-600" href="{{ route('privacy') }}">Privacy &amp; cookie policy</a></li>
             <li class="">

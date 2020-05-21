@@ -12,7 +12,7 @@
                 Packages can have their own testsuite. When a bug is discovered, you can easily distribute the fix in your apps by merely running <code class="opacity-75 text-lg bg-white rounded p-1">composer update</code>.
             </p>
             <p class="mt-4">
-                There are commercial benefits as well. By open sourcing packages, you as a developer and our company become much more visible in the community, which can lead to interesting opportunities coming your way.
+                There are commercial benefits as well. By open sourcing packages, you as a developer, and your company become much more visible in the community, which can lead to interesting opportunities coming your way.
             </p>
         </div>
     </blockquote>

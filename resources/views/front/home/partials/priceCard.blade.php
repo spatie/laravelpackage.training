@@ -31,7 +31,7 @@
         <ul class="mt-4 markup-ul grid gap-4">
             <li>
                 <div>
-                    Building a PHP package
+                    Building a framework agnostic PHP package
                     <div class="text-xs opacity-75">Basic structure, testing, GitHub actions, Packagist, …</div>
                 </div>
             </li>

@@ -5,7 +5,7 @@
 
 <p class="text-lg max-w-2xl">
     For all functionality that is added to a package, you'll learn how to automatically test it, both locally and via GitHub Actions.
-    This way you can build a beautiful and maintainable package that your co-workers, clients and the community can rely on.
+    This way you can build a beautiful and maintainable package that your co-workers, clients, and the community can rely on.
 </p>
 <p class="mt-4 text-lg max-w-2xl">
     All videos are available in our online course environment, <br>where you can track your progress.
@@ -14,7 +14,7 @@
 <ol class="mt-12 grid gapy-8 markup-ol">
     <li class="pt-8 text-xl">
         <div class="flex-grow">
-            <p class="markup-h2">Building a PHP package</p>
+            <p class="markup-h2">Building a framework agnostic PHP package</p>
             <ul class="mt-6 markup-ul-alt text-lg | md:markup-cols-2">
                     <li class="pb-3">Using the SPATIE PHP package skeleton to get started</li>
                     <li class="pb-3">Adding a first class to the package</li>

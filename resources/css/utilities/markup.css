@@ -87,7 +87,7 @@
 .markup-lists-alt ul > li:before,
 .markup-ul-alt > li:before {
     content: "->";
-    @apply text-blue-500;
+    @apply text-orange-500;
     @apply absolute;
     @apply left-0;
 }

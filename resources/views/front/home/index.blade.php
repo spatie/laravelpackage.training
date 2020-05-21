@@ -25,8 +25,8 @@
         </div>
 
         <div class="flex justify-center">
-            <button class="button text-3xl px-12 -mb-8 z-10 shadow-xl">
-                <i class="fas fa-play text-blue-200 mr-3"></i>
+            <button class="button text-3xl px-12 -mb-8 z-10 shadow-xl bg-orange-500">
+                <i class="fas fa-play text-orange-200 mr-3"></i>
                 Start learning!
             </button>
         </div>

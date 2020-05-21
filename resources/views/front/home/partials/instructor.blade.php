@@ -3,7 +3,9 @@
 
     <blockquote class="border-l-4 border-blue-100 overflow-hidden max-w-3xl bg-gray-100 shadow-xl p-8 | md:p-12 md:py-16 | xl:-ml-32 xl:px-16 xl:-mb-32">
         <div class="text-xl leading-loose font-medium text-blue-400">
-            <p>
+            <h3 class="markup-h3 text-lg opacity-50">Why create packages?</h3>
+
+            <p class="mt-8">
                 By moving common functionalities to packages, the codebase of your apps can become smaller and more maintainable.
             </p>
             <p class="mt-4">

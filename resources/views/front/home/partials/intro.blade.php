@@ -14,7 +14,7 @@
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
              <code class="text-lg opacity-75"><a href="https://github.com/spatie/browsershot">browsershot</a></code>,
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a></code>
-            and learn how to program, test and maintain your very own packages.
+            and learn how to program, test, and maintain your very own packages.
         </p>
     </div>
 

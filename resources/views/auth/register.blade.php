@@ -9,7 +9,7 @@
     <h1>{{ __('Create account') }}</h1>
 
     <p class="alert alert-info">
-        To start with Mailcoach, you'll first need an account.
+        We only need the info below.
     </p>
 
     <form class="form-grid" method="POST" action="{{ route('register') }}">

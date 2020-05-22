@@ -42,16 +42,16 @@
             <p class="markup-h2">Building a Laravel package</p>
             <ul class="mt-6 markup-ul-alt text-lg | md:markup-cols-2">
                     <li class="pb-3">Using the SPATIE Laravel package skeleton to get started</li>
-                    <li class="pb-3">Adding an artisan command</li>
-                    <li class="pb-3">Testing an artisan command using PHPUnit and Orchestra testbench</li>
-                    <li class="pb-3">Running the tests of the Laravel package on GitHub Actions</li>
-                    <li class="pb-3">Supporting multiple PHP and Laravel versions of your package</li>
-                    <li class="pb-3">Using a MySQL in the package tests and on GitHub Actions</li>
-                    <li class="pb-3">How to quickly develop a Laravel package inside a full Laravel application</li>
-                    <li class="pb-3">Adding models and migrations to the package and how to automatically test them</li>
                     <li class="pb-3">Adding a config file to the package</li>
+                    <li class="pb-3">Adding an artisan command</li>
+                    <li class="pb-3">Adding models and migrations to the package and how to automatically test them</li>
                     <li class="pb-3">Adding routes, controller and views in a way that they don't conflict with application routes</li>
+                    <li class="pb-3">Running the tests of the Laravel package on GitHub Actions</li>
+                    <li class="pb-3">Using a MySQL in the package tests and on GitHub Actions</li>
+                    <li class="pb-3">Testing a artisan commands using PHPUnit and Orchestra Testbench</li>
                     <li class="pb-3">How to test routes, controllers and views</li>
+                    <li class="pb-3">Supporting multiple PHP and Laravel versions of your package</li>
+                    <li class="pb-3">How to quickly develop a Laravel package inside a full Laravel application</li>
                     <li class="pb-3">A whopping 90 minute live coding video where we bring together the knowledge of the entire course to build a real life package from scratch. See Freek code and explain how he thinks</li>
             </ul>
         </div>

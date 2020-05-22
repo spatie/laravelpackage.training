@@ -9,7 +9,7 @@
         This way you can build a beautiful and maintainable package that your co-workers, clients, and the community can rely on.
     </p>
     <p class="mt-4 text-lg">
-        All videos are available in our online course environment, <br>where you can track your progress.
+        All videos are available in our online course environment, where you can track your progress.
     </p>
 </div>
 

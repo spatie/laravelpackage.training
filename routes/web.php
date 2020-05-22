@@ -3,6 +3,7 @@
 use App\Http\Front\Controllers\GitHubWebhookController;
 use App\Http\Front\Controllers\HomeController;
 use App\Http\Front\Controllers\SubscribeToEmailListController;
+use App\Http\Front\Controllers\UnderConstructionController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
@@ -19,6 +20,4 @@ Route::middleware('demoMode')->group(function () {
     Route::view('privacy', 'front.legal.privacy')->name('privacy');
 });
 
-Route::get('under-construction', function () {
-    return 'under construction...';
-});
+Route::get('under-construction', UnderConstructionController::class);

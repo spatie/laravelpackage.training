@@ -31,11 +31,6 @@
                             Follow @spatie_be
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCUBWS4xOYoLg7gduZe-vUog">
-                            Subscribe on YouTube
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>

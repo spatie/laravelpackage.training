@@ -34,7 +34,7 @@
             <div class="fixed inset-0 p-8 lg:p-16 bg-backdrop z-50 flex items-center justify-center" @keydown.window.escape="open = false">
                 <div class="w-full max-w-screen-xl">
                     <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                        <iframe src="https://player.vimeo.com/video/418813035/29c94b21f3?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                        <iframe src="https://player.vimeo.com/video/418813035?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                     </div>
                 </div>
             </div>

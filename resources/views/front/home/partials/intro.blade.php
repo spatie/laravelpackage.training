@@ -10,7 +10,7 @@
         </p>
          <p class="mt-4 text-xl text-white">
             Dive in the mind of the people that brought you quality packages like
-             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission">laravel-permission</a></code>,
+             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission/v3/introduction">laravel-permission</a></code>,
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
              <code class="text-lg opacity-75"><a href="https://github.com/spatie/browsershot">browsershot</a></code>,
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a></code>

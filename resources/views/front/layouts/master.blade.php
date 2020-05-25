@@ -44,11 +44,17 @@
     <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')
 
-        <header class="layout-col z-10">
-            <div class="{{ isset($inversNav) && $inversNav ? 'text-white border-light-100' : 'border-dark-50' }} py-6 border-b-2   | sm:flex sm:justify-between sm:items-center ">
-                @include('front.partials.logo')
+        <header class="z-10">
+            @if(! isset($inversNav))
+                    @include('front.partials.backgroundSmall')
+            @endif
 
-                @include('shared.partials.nav')
+            <div class="layout-col">
+                <div class="{{ isset($inversNav) && $inversNav ? 'border-b-2 border-light-100' : '' }} text-white py-6  | sm:flex sm:justify-between sm:items-center ">
+                    @include('front.partials.logo')
+
+                    @include('shared.partials.nav')
+                </div>
             </div>
         </header>
 

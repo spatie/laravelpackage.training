@@ -10,10 +10,12 @@
         @endguest
 
         @auth
-            <x-navigation-item :href="route('buy')">Buy course</x-navigation-item>
+            @if(! auth()->user()->canAccessVideos())
+                <x-navigation-item :href="route('buy')">Buy course</x-navigation-item>
+            @endif
 
             @if(auth()->user()->canAccessVideos())
-                 <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>		                
+                <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>
             @endif
 
             <li>

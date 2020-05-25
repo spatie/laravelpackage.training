@@ -10,7 +10,7 @@
     @apply px-2;
     @apply rounded-sm;
     @apply text-gray-800;
-    @apply bg-blue-100;
+    @apply bg-blue-50;
     @apply border;
     @apply border-transparent;
 }
@@ -38,7 +38,7 @@ input:read-only {
 
 .input-focus,
 .input:focus {
-    @apply border-blue-500;
+    @apply border-orange-500;
     @apply outline-none;
     @apply bg-white;
 }

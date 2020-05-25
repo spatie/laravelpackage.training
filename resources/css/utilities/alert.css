@@ -1,7 +1,6 @@
 .alert {
     @apply px-6;
     @apply py-4;
-    @apply border-l-4;
 }
 
 .alert a {
@@ -34,6 +33,7 @@
 .alert-success {
     @apply bg-gray-100;
     @apply border-green-500;
+    @apply text-green-700;
 }
 
 .alert-success a {
@@ -41,8 +41,9 @@
 }
 
 .alert-info {
-    @apply bg-gray-100;
+    @apply bg-blue-100;
     @apply border-blue-500;
+    @apply text-blue-700;
 }
 
 .alert-info a {
@@ -52,6 +53,7 @@
 .alert-warning {
     @apply bg-gray-100;
     @apply border-orange-500;
+    @apply text-orange-700;
 }
 
 .alert-warning a {
@@ -62,6 +64,7 @@
 .alert-error {
     @apply bg-gray-100;
     @apply border-red-500;
+    @apply text-red-700;
 }
 
 .alert-danger a,

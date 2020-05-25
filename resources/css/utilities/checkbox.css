@@ -26,7 +26,7 @@
     @apply absolute;
     width: 1.5em;
     height: 1.5em;
-    @apply bg-blue-100;
+    @apply bg-blue-50;
     @apply border;
     @apply border-transparent;
     @apply rounded-sm;
@@ -43,7 +43,7 @@
     justify-items: center;
     align-content: center;
     justify-content: center;
-    @apply text-blue-500;
+    @apply text-orange-500;
     font-size: 1em;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -58,7 +58,7 @@
 }
 
 .checkbox:focus:before {
-    @apply border-blue-500;
+    @apply border-orange-500;
     @apply bg-white;
     @apply shadow-focus;
 }

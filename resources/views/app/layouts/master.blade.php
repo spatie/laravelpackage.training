@@ -10,8 +10,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title') - Mailcoach</title>
-        <meta name="description" content="Mailcoach is a self-hosted dashboard for email newsletters. Everything you’d expect from an email list manager —in a modern Laravel jacket.">
+        <title>@yield('title') - Laravel Package Training</title>
+        <meta name="description" content="The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages">
 
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
@@ -28,13 +28,13 @@
         content="Mailcoach is a self-hosted dashboard for email newsletters. Everything you’d expect from an email list manager —in a modern Laravel jacket."/>
         <meta name="twitter:image" content="https://laravelpackage.training/images/social-card.jpg"/>
 
-        <meta property="og:site_name" content="Mailcoach">
+        <meta property="og:site_name" content="Laravel Package Training Video Course">
         <meta property="og:locale" content="en_US">
         <meta property="og:url" content="https://laravelpackage.training"/>
         <meta property="og:type" content="product"/>
-        <meta property="og:title" content="Self-host your email newsletter"/>
+        <meta property="og:title" content="Learn how to create PHP and Laravel packages"/>
         <meta property="og:description"
-            content="Mailcoach is a self-hosted dashboard for email newsletters. Everything you’d expect from an email list manager —in a modern Laravel jacket."/>
+            content="The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages"/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
     </head>
      <body class="flex flex-col w-full min-h-screen">

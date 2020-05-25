@@ -19,7 +19,7 @@
                                    href="{{ route('video-course.show', [$chapter, $video]) }}"
                                 >
                                     @if(isset($currentVideo) && $currentVideo->id === $video->id)
-                                        <i style="left:-1.5rem; top:.25em; font-size: 10px" class="absolute fas fa-play text-orange-500"></i>
+                                        <i style="left:-1.5rem; top:.275em; font-size: 10px" class="absolute fas fa-play text-orange-500"></i>
                                     @endif
 
                                     {{ $video->title }}

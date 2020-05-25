@@ -26,5 +26,9 @@
         </div>
     </form>
 
+    <div class="my-16 w-full">
+        <div class="border-t-2 border-blue-100"></div>
+    </div>
+
     @include('app.account.partials.purchases')
 @endsection

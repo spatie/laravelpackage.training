@@ -10,7 +10,7 @@
 
     <div class="markup markup-lists markup-links markup-code markup-tables">
         <h1>Laravel package training</h1>
-        <p>Welcome to this video course! Let's learn how to program, test, and maintain your very own packages.</p>
+        <p>Welcome to this video course! Ready to learn how to program, test, and maintain your very own packages?</p>
 
             <h2 class="markup-h2 mt-6">What we'll cover:</h2>
             <ul class="mt-4 markup-ul grid gap-4">

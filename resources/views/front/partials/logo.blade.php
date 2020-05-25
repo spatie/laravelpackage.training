@@ -1,5 +1,5 @@
 <div class="py-2 flex items-center opacity-90 hover:opacity-100">
-    <a href="/" class="block w-10 h-10">
+    <a href="{{ optional(auth()->user())->homeUrl() ?? '/' }}" class="block w-10 h-10">
         <img src="/images/laravel-package-training.svg">
     </a>
     <span class="ml-4 text-xl font-bold leading-tight">

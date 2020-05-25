@@ -1,17 +1,17 @@
-<div class="flex-none pb-16 sm:w-48 sm:pr-8 md:w-64">
+<div class="flex-none z-20 w-full sm:w-1/4">
     <input type="checkbox" class="hidden docs-sidebar-toggle" id="docs-sidebar-toggle">
     <div class="flex justify-end h-0 z-10 docs-sidebar-button">
         <label class="cursor-pointer ml-auto sm:hidden"
             for="docs-sidebar-toggle">
-            <span class="docs-sidebar-button-show button px-0 text-center rounded-full w-10 h-10 bg-white text-black"><i class="fas fa-bars"></i></span>
-            <span class="docs-sidebar-button-hide button px-0 text-center rounded-full w-10 h-10 bg-white text-black"><i class="fas fa-times"></i></span>
+            <span class="docs-sidebar-button-show button px-0 text-center rounded-full w-10 h-10 bg-transparent text-blue-500"><i class="fas fa-bars"></i></span>
+            <span class="docs-sidebar-button-hide button px-0 text-center rounded-full w-10 h-10 bg-transparent text-gray-500"><i class="fas fa-times"></i></span>
         </label>
     </div>
     <div class="docs-sidebar">
-        <ul class="docs-menu">
+        <ul class="docs-menu sm:px-6">
             @foreach ($chapters as $chapter)
                 <li>
-                    <h2>{{ $chapter->title }}</h2>
+                    <h2 class="leading-tight">{{ $chapter->title }}</h2>
                     <ul>
                         @forelse ($chapter->videos as $video)
                             <li class="{{ isset($currentVideo) && $currentVideo->id === $video->id ? "active" : "" }}">

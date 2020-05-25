@@ -1,4 +1,4 @@
-<h2>My purchases</h2>
+<h1>My purchases</h1>
 
 @if($purchases->count())
     <table class="table text-sm">

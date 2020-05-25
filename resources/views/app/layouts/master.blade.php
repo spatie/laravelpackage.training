@@ -59,7 +59,7 @@
 
             <section class="layout-col ">
                 <div class="mx-auto w-full z-10 shadow-2xl border-l-4 border-orange-500 bg-white  overflow-hidden">
-                    <div class="sm:flex items-start">
+                    <div class="sm:flex items-stretch">
                         @yield('sidebar')
 
                         <div class="flex-grow block bg-white z-10 overflow-hidden">

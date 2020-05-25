@@ -25,5 +25,5 @@
         </tbody>
     </table>
 @else
-    <div class="alert alert-info">You don't have made any purchases yet.</div>
+    <div class="alert alert-info">You haven't made any purchases yet. Head over to the <a href="{{ route('buy')}}">shop</a>!</div>
 @endif

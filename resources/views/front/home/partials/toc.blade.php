@@ -21,7 +21,7 @@
                     <li class="pb-3">Using the SPATIE PHP package skeleton to get started</li>
                     <li class="pb-3">Adding a first class to the package</li>
                     <li class="pb-3">Testing a package using PHPUnit</li>
-                    <li class="pb-3">Automatically fixed code styling issue locally</li>
+                    <li class="pb-3">Automatically fix code styling issue locally</li>
                     <li class="pb-3">Running the tests on GitHub actions</li>
                     <li class="pb-3">Fixing code style issues using GitHub Actions </li>
                     <li class="pb-3">Supporting multiple PHP versions</li>

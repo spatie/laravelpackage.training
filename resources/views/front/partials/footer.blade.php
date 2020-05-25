@@ -22,7 +22,7 @@
             <div class="text-light-900">
                 <ul class="grid gap-2 text-xl border-l-4 border-light-300 pl-4">
                     <li>
-                        <a href="mailto:info@spatie.be" class="text-light-900 hover:text-white">
+                        <a href="mailto:info@spatie.be?subject=Laravelpackage.training%20question" class="text-light-900 hover:text-white">
                             Email&nbsp;us
                         </a>
                     </li>

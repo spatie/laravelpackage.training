@@ -18,7 +18,7 @@
         <div class="flex-grow">
             <p class="markup-h2">Building a framework agnostic PHP package</p>
             <ul class="mt-6 markup-ul-alt text-lg | md:markup-cols-2">
-                    <li class="pb-3">Using the SPATIE PHP package skeleton to get started</li>
+                    <li class="pb-3">Using the SPATIE PHP package skeleton to get started building an agnostic package</li>
                     <li class="pb-3">Adding a first class to the package</li>
                     <li class="pb-3">Testing a package using PHPUnit</li>
                     <li class="pb-3">Automatically fix code styling issue locally</li>
@@ -41,7 +41,7 @@
         <div class="flex-grow">
             <p class="markup-h2">Building a Laravel package</p>
             <ul class="mt-6 markup-ul-alt text-lg | md:markup-cols-2">
-                    <li class="pb-3">Using the SPATIE Laravel package skeleton to get started</li>
+                    <li class="pb-3">Using the SPATIE Laravel package skeleton to get started building a Laravel specific package</li>
                     <li class="pb-3">Adding a config file to the package</li>
                     <li class="pb-3">Adding an artisan command</li>
                     <li class="pb-3">Adding models and migrations to the package and how to automatically test them</li>

@@ -11,7 +11,8 @@ class Purchase extends Model
     use HasUuid;
 
     protected $casts = [
-        'paddle_webhook_payload' => 'array',
+        'paddle_response' => 'array',
+        'total' => 'integer',
     ];
 
     public function product(): BelongsTo

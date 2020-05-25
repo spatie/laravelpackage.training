@@ -2,28 +2,24 @@
 
 namespace App\Actions;
 
-use App\Models\Product;
 use App\Models\Purchase;
 use App\Models\User;
-use App\Support\Paddle\PaddlePayload;
+use App\Support\Paddle\PaddleCheckoutResponse;
 
 class CreatePurchaseAction
 {
     public function execute(
         User $user,
-        Product $product,
-        PaddlePayload $paddlePayload
+        PaddleCheckoutResponse $paddleCheckoutResponse
     ): Purchase {
         return Purchase::create([
             'user_id' => $user->id,
-            'product_id' => $product->id,
-            'receipt_url' => $paddlePayload->receipt_url,
-            'payment_method' => $paddlePayload->payment_method,
-            'paddle_alert_id' => $paddlePayload->alert_id,
-            'paddle_fee' => $paddlePayload->fee,
-            'payment_tax' => $paddlePayload->payment_tax,
-            'earnings' => $paddlePayload->earnings,
-            'paddle_webhook_payload' => $paddlePayload->toArray(),
+            'paddle_order_id' => $paddleCheckoutResponse->orderId(),
+            'product_id' => $paddleCheckoutResponse->product()->id,
+            'paddle_product_id' => $paddleCheckoutResponse->paddleProductId(),
+            'receipt_url' => $paddleCheckoutResponse->receiptUrl(),
+            'total' => $paddleCheckoutResponse->total(),
+            'paddle_response' => $paddleCheckoutResponse->toArray(),
         ]);
     }
 }

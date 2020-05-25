@@ -15,7 +15,8 @@ return [
     */
 
     'paddle' => [
-        'vendor_id' => env('PADDLE_VENDOR_ID')
+        'vendor_id' => env('PADDLE_VENDOR_ID'),
+        'vendor_auth_code' => env('PADDLE_VENDOR_AUTH_CODE'),
     ],
 
     'mailgun' => [

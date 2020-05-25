@@ -15,13 +15,13 @@ class CreatePurchasesTable extends Migration
             $table->unsignedBigInteger('product_id');
 
             $table->uuid('uuid');
-            $table->string('payment_method');
+
             $table->string('receipt_url');
-            $table->json('paddle_webhook_payload');
-            $table->string('paddle_fee');
-            $table->string('payment_tax');
-            $table->string('earnings');
-            $table->string('paddle_alert_id');
+            $table->integer('total');
+            $table->string('paddle_order_id');
+            $table->string('paddle_product_id');
+
+            $table->json('paddle_response');
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('product_id')->references('id')->on('products');

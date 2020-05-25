@@ -10,12 +10,10 @@ $factory->define(Purchase::class, function (Faker $faker) {
     return [
         'product_id' => factory(Product::class),
         'user_id' => factory(User::class),
-        'paddle_alert_id' => $faker->word,
-        'payment_method' => 'visa',
         'receipt_url' => $faker->url,
-        'paddle_webhook_payload' => '{}',
-        'paddle_fee' => '0',
-        'payment_tax' => '0',
-        'earnings' => '0',
+        'paddle_order_id' => $faker->word,
+        'paddle_product_id' => $faker->word,
+        'paddle_response' => '{}',
+        'total' => 0,
     ];
 });

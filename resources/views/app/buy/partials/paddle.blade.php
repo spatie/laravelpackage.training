@@ -10,19 +10,18 @@
 
                     Paddle.Checkout.open({
                         product: event.target.getAttribute('data-product-id'),
-                        passthrough: JSON.stringify({
-                            'license': event.target.getAttribute('data-license')
-                        }),
                         email: "{{ auth()->user()->email }}",
                         allowQuantity: false,
                         disableLogout: true,
                         title: event.target.getAttribute('data-product-label'),
-                        success: "{{ action(\App\Http\App\Controllers\AfterPaddleSaleController::class) }}"
+                        successCallback: function(data) {
+                            console.log(data)
+
+                            console.log('sold')
+                        }
                     });
                 })
             })
         });
-
-
     </script>
 @endsection

@@ -9,7 +9,6 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::demoAccess('/demo');
 
-Route::webhooks('paddle-webhooks');
 Route::post('webhook/github', GitHubWebhookController::class);
 
 Route::middleware('demoMode')->group(function () {

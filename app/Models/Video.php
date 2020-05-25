@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Http\App\Controllers\Videos\VideosController;
+use App\Http\App\Controllers\VideosController;
 use App\Support\Vimeo\Vimeo;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -92,5 +92,34 @@ class Video extends Model
     public function getFormattedDescriptionAttribute()
     {
         return (new CommonMarkConverter())->convertToHtml($this->description ?? '');
+    }
+
+    public function hasBeenCompletedByCurrentUser(): bool
+    {
+        /** @var \App\Models\User $currentUser */
+        $currentUser = auth()->user();
+
+        return $currentUser->completedVideos()->where('video_id', $this->id)->exists();
+    }
+
+    public function markAsCompletedForCurrentUser(): self
+    {
+        /** @var \App\Models\User $currentUser */
+        $currentUser = auth()->user();
+
+        $currentUser->completedVideos()->syncWithoutDetaching($this);
+
+
+        return $this;
+    }
+
+    public function markAsUncompletedForCurrentUser(): self
+    {
+        /** @var \App\Models\User $currentUser */
+        $currentUser = auth()->user();
+
+        $currentUser->completedVideos()->detach($this);
+
+        return $this;
     }
 }

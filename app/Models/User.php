@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use App\Http\App\Controllers\BuyVideoCourseController;
-use App\Http\App\Controllers\Videos\VideosController;
+use App\Http\App\Controllers\VideosController;
 use App\Models\Concerns\HasUuid;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -29,7 +29,7 @@ class User extends Authenticatable
         return $this->hasMany(Purchase::class)->orderByDesc('created_at');
     }
 
-    public function videos(): BelongsToMany
+    public function completedVideos(): BelongsToMany
     {
         return $this->belongsToMany(Video::class, 'video_completions');
     }

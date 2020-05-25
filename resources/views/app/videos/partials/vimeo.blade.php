@@ -28,6 +28,12 @@
         });
 
         vimeo.on('ended', function (data) {
+            let completeButton = document.querySelector('.complete');
+
+            if (completeButton) {
+                completeButton.click();
+            }
+
             gtag('event', 'video-end', {
                 'video_id': videoId,
                 'video_playtime': data.seconds,

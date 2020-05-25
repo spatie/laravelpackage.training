@@ -35,7 +35,7 @@ class UserTest extends TestCase
 
         $this->assertFalse($user->hasCompletedVideo($video));
 
-        $user->videos()->attach($video);
+        $user->completedVideos()->attach($video);
 
         $this->assertTrue($user->fresh()->hasCompletedVideo($video));
     }

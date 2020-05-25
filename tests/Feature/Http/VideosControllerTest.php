@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Http;
 
-use App\Http\App\Controllers\Videos\VideosController;
+use App\Http\App\Controllers\VideosController;
 use App\Models\Product;
 use App\Models\User;
 use App\Models\Video;

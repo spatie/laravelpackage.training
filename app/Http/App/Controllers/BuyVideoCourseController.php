@@ -2,7 +2,6 @@
 
 namespace App\Http\App\Controllers;
 
-use App\Http\App\Controllers\Videos\VideosController;
 use App\Models\Product;
 
 class BuyVideoCourseController

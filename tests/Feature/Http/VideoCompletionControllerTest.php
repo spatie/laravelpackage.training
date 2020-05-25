@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Http;
 
-use App\Http\App\Controllers\Videos\VideoCompletionController;
+use App\Http\App\Controllers\VideoCompletionController;
 use App\Models\Product;
 use App\Models\Purchase;
 use App\Models\User;
@@ -33,19 +33,19 @@ class VideoCompletionControllerTest extends TestCase
     /** @test */
     public function it_can_record_a_video_completion()
     {
-        $this->assertEquals(0, $this->user->videos()->count());
+        $this->assertEquals(0, $this->user->completedVideos()->count());
         $this
             ->actingAs($this->user)
             ->post(action([VideoCompletionController::class, 'store'], [$this->video]))
             ->assertRedirect();
 
-        $this->assertEquals(1, $this->user->videos()->count());
+        $this->assertEquals(1, $this->user->completedVideos()->count());
     }
 
     /** @test */
     public function it_wont_record_a_completion_twice()
     {
-        $this->assertEquals(0, $this->user->videos()->count());
+        $this->assertEquals(0, $this->user->completedVideos()->count());
 
         $this
             ->actingAs($this->user)
@@ -57,7 +57,7 @@ class VideoCompletionControllerTest extends TestCase
             ->post(action([VideoCompletionController::class, 'store'], [$this->video]))
             ->assertRedirect();
 
-        $this->assertEquals(1, $this->user->videos()->count());
+        $this->assertEquals(1, $this->user->completedVideos()->count());
     }
 
     /** @test */
@@ -84,20 +84,20 @@ class VideoCompletionControllerTest extends TestCase
     /** @test */
     public function it_can_remove_a_completion()
     {
-        $this->assertEquals(0, $this->user->videos()->count());
+        $this->assertEquals(0, $this->user->completedVideos()->count());
 
         $this
             ->actingAs($this->user)
             ->post(action([VideoCompletionController::class, 'store'], [$this->video]))
             ->assertRedirect();
 
-        $this->assertEquals(1, $this->user->videos()->count());
+        $this->assertEquals(1, $this->user->completedVideos()->count());
 
         $this
             ->actingAs($this->user)
             ->delete(action([VideoCompletionController::class, 'destroy'], [$this->video]))
             ->assertRedirect();
 
-        $this->assertEquals(0, $this->user->videos()->count());
+        $this->assertEquals(0, $this->user->completedVideos()->count());
     }
 }

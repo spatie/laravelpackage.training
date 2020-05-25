@@ -171,8 +171,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\HorizonServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \App\Providers\FlashServiceProvider::class,
-        \App\Services\GitHub\GitHubServiceProvider::class,
+        App\Providers\FlashServiceProvider::class,
+        App\Providers\LivewireComponentsServiceProvider::class,
 
     ],
 

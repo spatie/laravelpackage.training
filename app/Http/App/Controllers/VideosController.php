@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Http\App\Controllers\Videos;
+namespace App\Http\App\Controllers;
 
 use App\Models\Chapter;
 use App\Models\Video;
-use Illuminate\Http\Request;
 
 class VideosController
 {
-    public function index(Request $request)
+    public function index()
     {
         $chapters = Chapter::with('videos')->get();
 
@@ -17,7 +16,7 @@ class VideosController
         ));
     }
 
-    public function show(Chapter $chapter, Video $video, Request $request)
+    public function show(Chapter $chapter, Video $video)
     {
         $chapters = Chapter::with('videos')->get();
 

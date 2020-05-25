@@ -3,7 +3,6 @@
 namespace App\Http\App\Controllers;
 
 use App\Actions\CreatePurchaseAction;
-use App\Http\App\Controllers\Videos\VideosController;
 use App\Models\Purchase;
 use App\Support\Paddle\PaddleApi;
 

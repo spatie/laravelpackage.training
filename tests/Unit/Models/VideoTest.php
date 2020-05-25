@@ -2,7 +2,7 @@
 
 namespace Tests\Models;
 
-use App\Http\App\Controllers\Videos\VideosController;
+use App\Http\App\Controllers\VideosController;
 use App\Models\Chapter;
 use App\Models\Video;
 use App\Support\Vimeo\Vimeo;

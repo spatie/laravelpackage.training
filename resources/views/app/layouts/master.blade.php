@@ -36,6 +36,7 @@
         <meta property="og:description"
             content="The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages"/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
+        @stack('styles')
     </head>
      <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')
@@ -85,5 +86,6 @@
         @yield('javaScript-body')
 
         @include('shared.partials.gtm-body')
+        @stack('scripts')
     </body>
 </html>

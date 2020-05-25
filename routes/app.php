@@ -4,8 +4,7 @@ use App\Http\App\Controllers\Account\AccountController;
 use App\Http\App\Controllers\Account\PasswordController;
 use App\Http\App\Controllers\BuyVideoCourseController;
 use App\Http\App\Controllers\VerifyPaddleSaleController;
-use App\Http\App\Controllers\Videos\VideoCompletionController;
-use App\Http\App\Controllers\Videos\VideosController;
+use App\Http\App\Controllers\VideosController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('buy-course', BuyVideoCourseController::class)->name('buy');
@@ -15,8 +14,6 @@ Route::get('verify-sale/{paddleCheckoutId}', VerifyPaddleSaleController::class)-
 Route::middleware('canAccessVideos')->group(function () {
     Route::get('video-course', [VideosController::class, 'index'])->name('video-course');
     Route::get('video-course/{chapter}/{video}', [VideosController::class, 'show'])->name('video-course.show');
-    Route::post('video-course/{video}/complete', [VideoCompletionController::class, 'store']);
-    Route::delete('video-course/{video}/complete', [VideoCompletionController::class, 'destroy']);
 });
 
 Route::get('account', [AccountController::class, 'index'])->name('account');

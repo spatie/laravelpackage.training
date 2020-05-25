@@ -1,5 +1,5 @@
 <div>
-    @if ($video->hasBeenCompletedByCurrentUser())
+    @if (! $video->hasBeenCompletedByCurrentUser())
         <button wire:click="toggleCompleted" class="button complete">
             Mark as completed
         </button>

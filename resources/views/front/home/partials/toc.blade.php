@@ -1,7 +1,7 @@
 <div class="max-w-3xl mx-auto | lg:ml-0">
     <header class="mb-12">
         <h2 class="markup-h1">Course overview</h2>
-        <p class="markup-baseline">30 hands-on videos</p>
+        <p class="markup-baseline">4 hours of content</p>
     </header>
 
     <p class="text-lg">

@@ -47,6 +47,11 @@ class PaddleCheckoutResponse
         return Arr::get($this->checkoutResponse, 'lockers.0.product_id');
     }
 
+    public function paddleCheckoutId(): string
+    {
+        return Arr::get($this->checkoutResponse, 'checkout.checkout_id');
+    }
+
     public function total(): int
     {
         $rawTotal =  Arr::get($this->checkoutResponse, "order.total");

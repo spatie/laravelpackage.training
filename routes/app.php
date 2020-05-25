@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('buy-course', BuyVideoCourseController::class)->name('buy');
 Route::get('purchases', PurchasesIndexController::class)->name('purchases');
 
-Route::get('after-paddle-sale', VerifyPaddleSaleController::class);
+Route::get('verify-sale/{paddleCheckoutId}', VerifyPaddleSaleController::class)->name('verify-sale');
 
 Route::middleware('canAccessVideos')->group(function () {
     Route::get('video-course', [VideosController::class, 'index'])->name('video-course');

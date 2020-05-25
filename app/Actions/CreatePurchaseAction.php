@@ -20,6 +20,7 @@ class CreatePurchaseAction
             'receipt_url' => $paddleCheckoutResponse->receiptUrl(),
             'total' => $paddleCheckoutResponse->total(),
             'paddle_response' => $paddleCheckoutResponse->toArray(),
+            'paddle_checkout_id' => $paddleCheckoutResponse->paddleCheckoutId(),
         ]);
     }
 }

@@ -15,9 +15,7 @@
                         disableLogout: true,
                         title: event.target.getAttribute('data-product-label'),
                         successCallback: function(data) {
-                            console.log(data)
-
-                            console.log('sold')
+                            window.location.href = "/verify-sale/" + data.checkout.id;
                         }
                     });
                 })

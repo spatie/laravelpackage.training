@@ -18,6 +18,7 @@ class CreatePurchasesTable extends Migration
 
             $table->string('receipt_url');
             $table->integer('total');
+            $table->string('paddle_checkout_id');
             $table->string('paddle_order_id');
             $table->string('paddle_product_id');
 

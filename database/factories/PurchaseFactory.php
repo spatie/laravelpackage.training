@@ -13,6 +13,7 @@ $factory->define(Purchase::class, function (Faker $faker) {
         'receipt_url' => $faker->url,
         'paddle_order_id' => $faker->word,
         'paddle_product_id' => $faker->word,
+        'paddle_checkout_id' => $faker->word,
         'paddle_response' => '{}',
         'total' => 0,
     ];

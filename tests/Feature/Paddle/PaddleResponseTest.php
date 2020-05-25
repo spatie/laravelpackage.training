@@ -14,6 +14,8 @@ class PaddleResponseTest extends TestCase
 
         $response = new PaddleCheckoutResponse($rawResponse);
 
+        $this->assertEquals('57225611-chre608565465d9-144d5af02b', $response->paddleCheckoutId());
+
         $this->assertEquals(123, $response->total());
         $this->assertEquals('https://my.paddle.com/receipt/14892750/57225611-chre608565465d9-144d5af02b', $response->receiptUrl());
     }

@@ -17,7 +17,7 @@ We reserve however the right, in our sole discretion, to change, modify, add or 
 
 We shall make sure that the latest version of these Terms of Use shall always be available on <https://laravelpackage.training/terms-of-use>.
 
-If you have any questions or concerns, you may contact us by email at [info@spatie.be](mailto:info@spatie.be).
+If you have any questions or concerns, you may contact us by at [info@spatie.be](mailto:info@spatie.be).
 
 ## 1. Definitions
 
@@ -40,7 +40,7 @@ The following definitions apply to these Terms of Use:
 
 3.3. When You purchase the Video Course, You shall be able to download the most recent version of the Video Course.
 
-3.4. A valid e-mail address is needed in order to purchase the entire Video Course. The Video Course is always bound to one e-mail address.
+3.4. A valid email address is needed in order to purchase the entire Video Course. The Video Course is always bound to one email address.
 
 ## 4. Use of the Video Course
 
@@ -58,7 +58,7 @@ The following definitions apply to these Terms of Use:
 
 4.7. You shall not attempt to gain access to reserved or protected parts of our Video Course, to which he has not obtained explicit access.
 
-4.8.  We are authorized to send You messages via e-mail regarding the use of our Video Course. If You provide feedback or suggestions regarding our Video Course, we may use this information to improve the video's within the course without any obligation to You.
+4.8.  We are authorized to send You messages via email regarding the use of our Video Course. If You provide feedback or suggestions regarding our Video Course, we may use this information to improve the video's within the course without any obligation to You.
 
 4.9. You shall have an existing and current account in order to purchase and download our Video Course. You provide us timely with all necessary and correct information, and ensure that this information remains up-to-date. You shall not provide any false or incorrect information to us about your identity or misrepresent your identity in any other way. We shall only use your personal data for the purposes for which we have this data at our disposal, and in a manner that is in accordance with these Terms of Use and our privacy policy.
 
@@ -70,7 +70,7 @@ The following definitions apply to these Terms of Use:
 
 5.2. You are entitled to terminate your use of the Video Course but shall, for the avoidance of doubt, in no event be entitled to the repayment of the Fee.
 
-5.3. The downloaded Video Course can be used unlimited without any restrictions after the purchase thereof. There is no termination on the use of the Video Course after the purchase, but You are only entitled to download the most recent version of the Video Course with a valid e-mail address, as described in Article 3.
+5.3. The downloaded Video Course can be used unlimited without any restrictions after the purchase thereof. There is no termination on the use of the Video Course after the purchase, but You are only entitled to download the most recent version of the Video Course with a valid email address, as described in Article 3.
 
 5.4. As long as You use the Video Course, these Terms of Use shall apply.
 

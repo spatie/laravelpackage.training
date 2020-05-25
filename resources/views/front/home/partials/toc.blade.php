@@ -48,7 +48,7 @@
                     <li class="pb-3">Adding routes, controllers and views in a way that they don't conflict with application routes</li>
                     <li class="pb-3">Running the tests of the Laravel package on GitHub Actions</li>
                     <li class="pb-3">Using a MySQL in the package tests and on GitHub Actions</li>
-                    <li class="pb-3">Testing a artisan commands using PHPUnit and Orchestra Testbench</li>
+                    <li class="pb-3">Testing artisan commands using PHPUnit and Orchestra Testbench</li>
                     <li class="pb-3">How to test routes, controllers and views</li>
                     <li class="pb-3">Supporting multiple PHP and Laravel versions of your package</li>
                     <li class="pb-3">How to quickly develop a Laravel package inside a full Laravel application</li>

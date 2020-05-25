@@ -10,6 +10,12 @@
         @endguest
 
         @auth
+            <x-navigation-item :href="route('buy')">Buy course</x-navigation-item>
+
+            @if(auth()->user()->canAccessVideos())
+                 <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>		                
+            @endif
+
             <li>
                 <a href="{{ route('account') }}">
                     <i title="{{ Auth::user()->name }}" class="fas fa-user"></i>

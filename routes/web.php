@@ -2,6 +2,7 @@
 
 use App\Http\Front\Controllers\GitHubWebhookController;
 use App\Http\Front\Controllers\HomeController;
+use App\Http\Front\Controllers\PaddleWebhooksController;
 use App\Http\Front\Controllers\SubscribeToEmailListController;
 use App\Http\Front\Controllers\UnderConstructionController;
 use Illuminate\Support\Facades\Route;
@@ -10,7 +11,7 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 Route::demoAccess('/demo');
 
 /** Needed to avoid error mails from Paddle */
-Route::any('/paddle-webhooks', fn () => 'ok');
+Route::any('/paddle-webhooks', PaddleWebhooksController::class);
 
 Route::post('webhook/github', GitHubWebhookController::class);
 

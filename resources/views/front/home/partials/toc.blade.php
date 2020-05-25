@@ -64,11 +64,12 @@
         <div class="flex-grow">
             <p class="markup-h2">Source diving Spatie packages</p>
             <ul class="mt-6 markup-ul-alt markup-links text-lg | md:markup-cols-2">
-                <li class="pb-3"><a href="">laravel-tail</a>: how to package up a simple artisan command  to reuse in all your projects and share with the community</li>
-                <li class="pb-3"><a href="">laravel-medialibrary</a>: learn how we structured this big package to keep it maintainable</li>
-                <li class="pb-3"><a href="">laravel-multitenancy</a>: this source dive shows how a complicated package can remain lightweight. Lots of things to learn about the Laravel internals too.</li>
-                <li class="pb-3"><a href="">laravel-collection-macros</a>: see how we split up large classes into several smaller ones</li>
-                <li class="pb-3"><a href="">laravel-responsecache</a>: this popular package can make any Laravel application much faster. Learn how we use middleware to achieve this</li>
+                <li class="pb-3"><a href="https://github.com/spatie/laravel-tail">laravel-tail</a>: how to package up a simple artisan command  to reuse in all your projects and share with the community</li>
+                <li class="pb-3"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a>: learn how we structured this big package to keep it maintainable</li>
+                <li class="pb-3"><a href="https://docs.spatie.be/laravel-multitenancy">laravel-multitenancy</a>: this source dive shows how a complicated package can remain lightweight. Lots of things to learn about the Laravel internals too.</li>
+                <li class="pb-3"><a href="https://github.com/spatie/laravel-collection-macros">laravel-collection-macros</a>: see how we split up large classes into several smaller ones</li>
+                <li class="pb-3"><a href="https://github.com/spatie/laravel-responsecache">laravel-responsecache</a>: this popular package can make any Laravel application much faster. Learn how we use middleware to achieve this</li>
+            </ul>
         </div>
     </li>
 </ol>

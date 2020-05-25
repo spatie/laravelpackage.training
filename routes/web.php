@@ -9,6 +9,9 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::demoAccess('/demo');
 
+/** Needed to avoid error mails from Paddle */
+Route::any('/paddle-webhooks', fn () => 'ok');
+
 Route::post('webhook/github', GitHubWebhookController::class);
 
 Route::middleware('demoMode')->group(function () {

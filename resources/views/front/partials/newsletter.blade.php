@@ -1,7 +1,6 @@
 @if(session()->has('subscribed'))
     <p id="newsletter" class="px-4 py-2 shadow-xl bg-green-500 text-white rounded">
-        Howdy partner! <br>
-        You are now subscribed and will hear from us soon.
+        We have sent you an e-mail with a link to confirm your subscription
     </p>
 @else
     <form

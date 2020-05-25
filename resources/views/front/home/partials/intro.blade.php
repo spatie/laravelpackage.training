@@ -6,10 +6,10 @@
         </header>
 
         <p class="mt-12 text-xl text-white">
-            Having produced <a href="https://packagist.org/?query=spatie">200 packages</a> with more than 75 million downloads in total, we know what we talk about.
+            Having produced <a href="https://packagist.org/?query=spatie">200 packages</a> with more than 75 million downloads in total, the <a href="https://spatie.be" target="_blank" class="markup-link-invers">Spatie</a> team knows what they talk about.
         </p>
          <p class="mt-4 text-xl text-white">
-            Dive in the mind of the team that brought you quality packages like
+            Dive in the mind of the people that brought you quality packages like
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission">laravel-permission</a></code>,
              <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
              <code class="text-lg opacity-75"><a href="https://github.com/spatie/browsershot">browsershot</a></code>,

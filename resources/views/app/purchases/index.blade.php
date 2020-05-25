@@ -6,7 +6,7 @@
     <h1>My purchases</h1>
 
     @if($purchases->count())
-        <table class="table">
+        <table class="table text-sm">
             <thead>
             <tr>
                 <th>Date</th>

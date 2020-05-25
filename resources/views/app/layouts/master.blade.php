@@ -59,22 +59,24 @@
 
             <section class="layout-col ">
                 <div class="mx-auto w-full max-w-3xl z-10 shadow-2xl border-l-4 border-orange-500 overflow-hidden">
-                    <div class="block bg-white">
-                        <div class="markup markup-links p-12">
-                             @if(flash()->message)
-                            <div class="mb-12 alert {{ flash()->class }}">
-                                    {{ flash()->message }}
-                                </div>
-                            @endif
+                    <div class="sm:flex items-start">
+                        @yield('sidebar')
 
-                            @yield('content')
+                        <div class="flex-grow block bg-white z-10 shadow-2xl rounded-b overflow-hidden | lg:rounded">
+                            <div class="markup markup-links p-12">
+                                @if(flash()->message)
+                                <div class="mb-12 alert {{ flash()->class }}">
+                                        {{ flash()->message }}
+                                    </div>
+                                @endif
+
+                                @yield('content')
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        @include('front.partials.footer', ['hideFooter' => true])
 
         @yield('javaScript-body')
 

@@ -47,7 +47,7 @@
                     <div class="text-xs opacity-75">Get a tour of real life examples</div>
                 </div>
             </li>
-
+        </ul>
             <p class="mt-4">
                 <a class="markup-link" href="#toc">See the entire table of contents</a>
             </p>

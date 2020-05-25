@@ -29,5 +29,7 @@
 
             </tbody>
         </table>
+    @else
+        <div class="alert alert-info">You don't have made any purchases yet. Go <a href="{{ route('buy') }}">buy the course</a> now!</div>
     @endif
 @endsection

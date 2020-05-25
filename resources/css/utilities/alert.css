@@ -31,7 +31,7 @@
 }
 
 .alert-success {
-    @apply bg-gray-100;
+    @apply bg-green-100;
     @apply border-green-500;
     @apply text-green-700;
 }

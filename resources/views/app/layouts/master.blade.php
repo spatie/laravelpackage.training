@@ -37,28 +37,31 @@
             content="Mailcoach is a self-hosted dashboard for email newsletters. Everything you’d expect from an email list manager —in a modern Laravel jacket."/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
     </head>
-    <body class="flex flex-col w-full min-h-screen bg-blue-100">
+     <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')
 
-        <header class="layout-col z-10">
-            <div class="{{ isset($inversNav) && $inversNav ? 'text-white border-light-100' : 'border-dark-50' }} py-6 border-b-2   | sm:flex sm:justify-between sm:items-center ">
-                @include('front.partials.logo')
+        <header class="z-10">
+            @if(! isset($inversNav))
+                    @include('front.partials.backgroundSmall')
+            @endif
 
-                @include('shared.partials.nav')
+            <div class="layout-col">
+                <div class="{{ isset($inversNav) && $inversNav ? 'border-b-2 border-light-100' : '' }} text-white py-6  | sm:flex sm:justify-between sm:items-center ">
+                    @include('front.partials.logo')
+
+                    @include('shared.partials.nav')
+                </div>
             </div>
         </header>
 
-        <main class="z-10 mt-8 -mb-24">
-            <div class="absolute w-full top-0" style="bottom: 4rem">
-                @include('front.partials.swooshBottom')
-            </div>
-            <section class="layout-col">
-                <div class="sm:flex items-start">
-                    @yield('sidebar')
+        <main class="flex-1 flex flex-col justify-center z-10 py-16">
+            <div class="absolute inset-0 bg-blue-700 opacity-75"> </div>
 
-                    <div class="flex-grow block bg-white z-10 shadow-2xl rounded-b overflow-hidden | lg:rounded">
+            <section class="layout-col ">
+                <div class="mx-auto w-full max-w-3xl z-10 shadow-2xl border-l-4 border-orange-500 overflow-hidden">
+                    <div class="block bg-white">
                         <div class="markup markup-links p-12">
-                            @if(flash()->message)
+                             @if(flash()->message)
                             <div class="mb-12 alert {{ flash()->class }}">
                                     {{ flash()->message }}
                                 </div>
@@ -71,7 +74,7 @@
             </section>
         </main>
 
-        @include('front.partials.footer')
+        @include('front.partials.footer', ['hideFooter' => true])
 
         @yield('javaScript-body')
 

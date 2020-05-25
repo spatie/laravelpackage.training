@@ -10,7 +10,7 @@
         @endguest
 
         @auth
-            <x-navigation-item :href="route('buy')">Buy</x-navigation-item>
+            <x-navigation-item :href="route('buy')">Buy course</x-navigation-item>
             @if(auth()->user()->canAccessVideos())
                 <x-navigation-item :href="route('video-course')">Videos</x-navigation-item>
             @endif
@@ -30,7 +30,7 @@
 
             @if(auth()->user()->admin)
                 <x-navigation-item href="/mailcoach">
-                    <i title="Mailcoach" class="fas fa-horse text-blue-500"></i>
+                    <i title="Mailcoach" class="fas fa-horse text-orange-500"></i>
                 </x-navigation-item>
             @endif
         @endauth

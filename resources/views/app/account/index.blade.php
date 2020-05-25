@@ -5,10 +5,9 @@
 @section('content')
     <h1>My account</h1>
 
-    <ul class="mb-6 markup-ul-alt grid gap-1">
-        <li><a href="{{ route('password') }}">Change password</a></li>
+    <p class="mb-6"><a href="{{ route('password') }}">Change password</a>
         {{-- <li><a href="{{ route('github') }}">Configure GitHub access</a></li>--}}
-    </ul>
+    </p>
 
     <form
         class="form-grid"

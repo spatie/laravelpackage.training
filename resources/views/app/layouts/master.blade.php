@@ -54,15 +54,15 @@
             </div>
         </header>
 
-        <main class="flex-1 flex flex-col justify-center z-10 py-16">
+        <main class="flex-1 flex flex-col justify-start z-10 py-16">
             <div class="absolute inset-0 bg-blue-700 opacity-75"> </div>
 
             <section class="layout-col ">
-                <div class="mx-auto w-full max-w-3xl z-10 shadow-2xl border-l-4 border-orange-500 overflow-hidden">
+                <div class="mx-auto w-full z-10 shadow-2xl border-l-4 border-orange-500 bg-white  overflow-hidden">
                     <div class="sm:flex items-start">
                         @yield('sidebar')
 
-                        <div class="flex-grow block bg-white z-10 shadow-2xl rounded-b overflow-hidden | lg:rounded">
+                        <div class="flex-grow block bg-white z-10 overflow-hidden">
                             <div class="markup markup-links p-12">
                                 @if(flash()->message)
                                 <div class="mb-12 alert {{ flash()->class }}">
@@ -77,6 +77,10 @@
                 </div>
             </section>
         </main>
+
+        <div class="z-20">
+            @include('front.partials.footer', ['hideFooter' => true])
+        </div>
 
         @yield('javaScript-body')
 

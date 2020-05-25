@@ -52,7 +52,7 @@
                     <li class="pb-3">How to test routes, controllers and views</li>
                     <li class="pb-3">Supporting multiple PHP and Laravel versions of your package</li>
                     <li class="pb-3">How to quickly develop a Laravel package inside a full Laravel application</li>
-                    <li class="pb-3">A whopping 90 minute live coding video where we bring together the knowledge of the entire course to build a real life package from scratch. See Freek code and explain how he thinks</li>
+                    <li class="pb-3">A whopping 90 minute live coding video where we bring together the knowledge of the entire course to build a real life package from scratch. See Freek code and explain how he thinks.</li>
             </ul>
         </div>
     </li>

@@ -17,6 +17,6 @@ class SubscribeToEmailListRequest extends FormRequest
 
     public function emailList(): EmailList
     {
-        return EmailList::where('name', 'marketing')->first();
+        return EmailList::find(1);
     }
 }

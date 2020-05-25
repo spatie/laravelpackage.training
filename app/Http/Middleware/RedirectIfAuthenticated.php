@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use App\Http\App\Controllers\Licenses\BuyVideoCourseController;
+use App\Http\App\Controllers\BuyVideoCourseController;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 

@@ -10,6 +10,7 @@ class AccountController
     {
         return view('app.account.index', [
             'user' => auth()->user(),
+            'purchases' => auth()->user()->purchases,
         ]);
     }
 

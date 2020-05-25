@@ -2,7 +2,6 @@
 
 namespace App\Http\Auth\Controllers;
 
-use App\Http\App\Controllers\Licenses\BuyVideoCourseController;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -20,6 +19,6 @@ class LoginController extends Controller
 
     public function redirectPath()
     {
-        return action(BuyVideoCourseController::class);
+        return auth()->user()->homeUrl();
     }
 }

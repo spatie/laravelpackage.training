@@ -2,7 +2,7 @@
 
 namespace App\Http\Auth\Controllers;
 
-use App\Http\App\Controllers\Licenses\BuyVideoCourseController;
+use App\Http\App\Controllers\BuyVideoCourseController;
 use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\RegistersUsers;

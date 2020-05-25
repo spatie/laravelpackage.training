@@ -6,7 +6,6 @@
     <h1>My account</h1>
 
     <p class="mb-6"><a href="{{ route('password') }}">Change password</a>
-        {{-- <li><a href="{{ route('github') }}">Configure GitHub access</a></li>--}}
     </p>
 
     <form
@@ -26,4 +25,6 @@
             </button>
         </div>
     </form>
+
+    @include('app.account.partials.purchases')
 @endsection

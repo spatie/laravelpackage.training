@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Http\App\Controllers\BuyVideoCourseController;
+use App\Http\App\Controllers\Videos\VideosController;
 use App\Models\Concerns\HasUuid;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -21,16 +23,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'admin' => 'boolean',
     ];
-
-    public function activeLicenses(): HasMany
-    {
-        return $this->licenses()->where('expires_at', '>', now());
-    }
-
-    public function scopeHasAccessToRepo(Builder $query): void
-    {
-        $query->whereNotNull('github_username');
-    }
 
     public function purchases(): HasMany
     {
@@ -60,5 +52,12 @@ class User extends Authenticatable
     public function hasLoggedInViaGitHub(): bool
     {
         return ! is_null($this->github_username);
+    }
+
+    public function homeUrl(): string
+    {
+        return $this->canAccessVideos()
+            ? action([VideosController::class, 'index'])
+            : action(BuyVideoCourseController::class);
     }
 }

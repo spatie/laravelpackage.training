@@ -22,7 +22,7 @@
         <div class="w-full max-w-3xl">
             <div role="button" class="aspect-16x9" @click="open = true">
                 <div class="group absolute inset-0 grid place-center bg-blue-500 rounded-t shadow-xl | lg:rounded">
-                    <img alt="" class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100" src="/images/intro.jpg">
+                    <img alt="" class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300" src="/images/intro.jpg">
                     <span class="bg-dark-800 text-white rounded-sm px-3 py-1">
                         <i class="fas fa-play text-orange-500"></i> <span class="ml-2 text-xs uppercase tracking-widest">Watch example</span>
                     </span>

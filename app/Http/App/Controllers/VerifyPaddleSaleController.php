@@ -29,9 +29,9 @@ class VerifyPaddleSaleController
 
         (new CreatePurchaseAction())->execute(auth()->user(), $checkoutResponse);
 
-        flash()->success('You have bought the course');
+        flash()->success('Thank you! You can now view the course 🍿.');
 
 
-        return redirect()->action(VideosController::class);
+        return redirect()->action([VideosController::class, 'index']);
     }
 }

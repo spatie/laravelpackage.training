@@ -2,7 +2,7 @@
 
 @section('title', 'Login')
 
-@section('description', 'Log in for Mailcoach — a self-hosted solution to send out your email newsletters at low cost')
+@section('description', 'Log in to view the Laravel Package Video Course')
 
 @section('auth')
     <h1>{{ __('Login') }}</h1>

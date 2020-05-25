@@ -2,7 +2,7 @@
 
 @section('title', 'Register')
 
-@section('description', 'Register for Mailcoach — a self-hosted solution to send out your email newsletters at low cost')
+@section('description', 'Register to view the Laravel Package Video Course')
 
 @section('auth')
 

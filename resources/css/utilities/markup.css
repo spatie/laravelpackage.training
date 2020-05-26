@@ -87,7 +87,7 @@
 .markup-lists-alt ul > li:before,
 .markup-ul-alt > li:before {
     content: "->";
-    @apply text-orange-500;
+    @apply text-blue-300;
     @apply absolute;
     @apply left-0;
 }
@@ -130,6 +130,12 @@
     @apply absolute;
     @apply left-0;
     content: counter(customOl) ".";
+}
+
+.markup-lists-spaced ol,
+.markup-lists-spaced ul {
+    @apply grid;
+    @apply gap-1;
 }
 
 /* Link styles */

@@ -16,20 +16,12 @@ class PaddleCheckoutResponse
 
     public function isOk(): bool
     {
-        if (Arr::get($this->checkoutResponse, 'success') === false) {
-            return false;
-        }
-
         if (! $this->product()) {
             return false;
         }
 
         if (Arr::get($this->checkoutResponse, 'order.total') === '0.00') {
             return true;
-        }
-
-        if (Arr::get($this->checkoutResponse, 'order.status') === 'incomplete') {
-            return 'false';
         }
 
         return false;

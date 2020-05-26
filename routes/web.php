@@ -7,8 +7,6 @@ use App\Http\Front\Controllers\SubscribeToEmailListController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
-Route::demoAccess('/demo');
-
 /** Needed to avoid error mails from Paddle */
 Route::any('/paddle-webhooks', PaddleWebhooksController::class);
 

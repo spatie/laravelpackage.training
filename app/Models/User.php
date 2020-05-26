@@ -46,7 +46,7 @@ class User extends Authenticatable
 
     public function hasCompletedVideo(Video $video): bool
     {
-        return $this->videos->contains($video);
+        return $this->completedVideos->contains($video);
     }
 
     public function hasLoggedInViaGitHub(): bool

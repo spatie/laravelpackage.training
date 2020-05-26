@@ -23,9 +23,9 @@
             </div>
 
             <div class="text-light-900">
-                <ul class="grid gap-2 text-xl border-l-4 border-light-300 pl-4">
+                <ul class="grid gap-2 text-xl border-l-4 border-light-300 pl-4 markup-links-invers">
                     <li>
-                        <a href="mailto:info@spatie.be?subject=Laravelpackage.training%20question" class="text-light-900 hover:text-white">
+                        <a href="mailto:info@spatie.be?subject=Laravelpackage.training%20question">
                             Email&nbsp;us
                         </a>
                     </li>

@@ -150,12 +150,12 @@
 .markup-link-invers {
     @apply text-white;
     @apply underline;
-    text-decoration-color: var(--light-800);
+    text-decoration-color: var(--light-700);
 }
 
 .markup-links-invers a:hover,
 .markup-link-invers:hover {
-    text-decoration-color: var(--white);
+    text-decoration-color: var(--light-800);
 }
 
 .markup-links-gray a,

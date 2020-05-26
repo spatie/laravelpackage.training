@@ -5,6 +5,7 @@ namespace App\Http\App\Controllers;
 use App\Actions\CreatePurchaseAction;
 use App\Models\Purchase;
 use App\Support\Paddle\PaddleApi;
+use Illuminate\Support\Facades\Log;
 
 class VerifyPaddleSaleController
 {
@@ -20,6 +21,7 @@ class VerifyPaddleSaleController
 
         if (!$checkoutResponse->isOk()) {
             ld("Error processing checkout `{$paddleCheckoutId}`", $checkoutResponse->toArray());
+            Log::emergency("Error processing checkout `{$paddleCheckoutId}`");
 
             flash()->error("There was a problem processing your payment. Please contact info@spatie.be mentioning this checkout id: `${paddleCheckoutId}`");
 

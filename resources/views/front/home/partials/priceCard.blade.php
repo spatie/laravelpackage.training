@@ -11,7 +11,7 @@
                 <span class="absolute right-full text-blue-300 text-xl mt-1 mr-2">$</span>
                 <span class="font-semibold text-blue-900 text-5xl tracking-wide">79</span>
                     <div style="transform: rotate(-5deg); left: 70%; top: 1rem" class="absolute w-16 h-16 flex items-center text-xs tracking-normal leading-tight bg-orange-500 text-white rounded-full shadow-xl">
-                        <span>Ends on <span class="font-semibold">June 4<sup>th</sup></span></span>
+                        <span>Ends on <span class="font-semibold">June 5<sup>th</sup></span></span>
                 </div>
             </p>
             <p class="mt-3 text-center uppercase font-medium text-sm text-gray-400">

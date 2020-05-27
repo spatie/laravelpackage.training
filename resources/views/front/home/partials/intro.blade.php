@@ -1,7 +1,7 @@
 <div class="py-16 grid lg:cols-2 gap-16 items-center">
     <div class="mx-auto max-w-3xl">
         <header class="text-white">
-            <p class="font-bold font-serif text-5xl leading-tight">Learn how to create <br>a Laravel package</p>
+            <p class="font-bold font-serif text-3xl sm:text-5xl leading-tight">Learn how to create <br>a Laravel package</p>
             <h1 class="mt-2 markup-baseline text-orange-400 opacity-100 text-2xl">Become the next package maestro</h1>
         </header>
 

@@ -9,7 +9,7 @@
 
     <img loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="/images/paint-purple.jpg">
 
-    <main class="z-10 shadow-xl">
+    <main class="z-20 shadow-xl">
             <section class="layout-col">
                 @include('front.home.partials.intro')
 

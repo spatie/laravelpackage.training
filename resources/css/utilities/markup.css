@@ -229,8 +229,10 @@
 
 .markup-code :not(pre) > code {
     @apply rounded-sm;
-    @apply text-blue-700;
-    font-size: 14px;
+    @apply bg-dark-50;
+    @apply text-gray-700;
+    font-size: 0.85em;
+    @apply p-1;
 }
 
 .markup-code .hljs {

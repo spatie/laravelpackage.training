@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="z-10">
     <div class="absolute inset-0 overflow-hidden">
         @unless(isset($hideFooter) && $hideFooter)
             <img loading="eager" class="opacity-50 absolute left-0 w-2/3 h-auto" src="/images/footer.jpg" style="top:25%; object-fit: cover; object-position: top center;" alt="">

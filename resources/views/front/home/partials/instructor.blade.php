@@ -30,7 +30,7 @@
                 <h2 class="markup-h1">
                     <span class="z-10">Meet your instructor</span>
                 </h2>
-                <p class="markup-baseline">Chances are you already did!</p>
+                <p class="markup-baseline">Chances are you already have!</p>
             </div>
         </header>
 

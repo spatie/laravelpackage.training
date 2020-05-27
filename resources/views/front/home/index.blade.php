@@ -2,7 +2,7 @@
 
 @section('title', 'Learn to create Laravel packages')
 
-@section('description', '')
+@section('description', 'The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages')
 
 @section('content')
     @include('front.partials.background')

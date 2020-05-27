@@ -17,12 +17,22 @@ class VerifyPaddleSaleController
             return back();
         }
 
-        $checkoutResponse = PaddleApi::getCheckout($paddleCheckoutId);
+        try {
+            $checkoutResponse = retry(5, function () use ($paddleCheckoutId) {
+                $checkoutResponse = PaddleApi::getCheckout($paddleCheckoutId);
 
-        if (!$checkoutResponse->isOk()) {
+                if (!$checkoutResponse->isOk()) {
+                    throw new Exception("Error processing checkout `{$paddleCheckoutId}`");
+                }
+
+                return $checkoutResponse;
+            }, 1000);
+        } catch (Exception $exception) {
+            report($exception);
+
+            $checkoutResponse = PaddleApi::getCheckout($paddleCheckoutId);
+
             ld("Error processing checkout `{$paddleCheckoutId}`", $checkoutResponse->toArray());
-
-            report(new Exception("Error processing checkout `{$paddleCheckoutId}`"));
 
             flash()->error("There was a problem processing your payment. Please contact info@spatie.be mentioning this checkout id: `${paddleCheckoutId}`");
 

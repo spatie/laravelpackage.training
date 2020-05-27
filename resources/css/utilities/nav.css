@@ -2,14 +2,14 @@
     display: grid;
     grid-template-columns: auto;
     grid-auto-flow: column;
-    grid-gap: theme("padding.6");
+    grid-gap: theme("padding.8");
     @apply items-center;
     @apply justify-start;
 }
 
 @screen md {
     .nav {
-        grid-gap: theme("padding.8");
+        @apply justify-start;
     }
 }
 

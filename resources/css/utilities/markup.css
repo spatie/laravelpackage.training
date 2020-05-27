@@ -1,11 +1,11 @@
 /* Margins */
 
 .markup h1 {
-    @apply mb-16;
+    @apply mb-12;
 }
 
 .markup h2 {
-    @apply mt-12;
+    @apply mt-8;
     @apply mb-4;
 }
 

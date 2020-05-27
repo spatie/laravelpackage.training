@@ -3,11 +3,13 @@
 @section('title', 'Purchases')
 
 @section('content')
-    <h1>Buy video course</h1>
+    <h1>Buy the course</h1>
 
-    <p>Almost there!
-    <br>
-    The button below will take you to our payment provider to handle the purchase.</p>
+     <p class="alert alert-info mb-12">
+        Almost there!
+        <br>
+        The button below will take you to our payment provider Paddle to handle the purchase.
+    </p>
 
 
     @include('app.buy.partials.paddle')
@@ -19,7 +21,7 @@
     </div>
 
     <div class="mt-8 text-xs text-gray-500">
-        All purchases are personal. Contact us if you're interested in buying multiple licenses for your team.
+        All purchases are personal. <a href="mailto:info@spatie.be">Contact us</a> if you're interested in buying multiple licenses for your team.
     </div>
 
 @endsection

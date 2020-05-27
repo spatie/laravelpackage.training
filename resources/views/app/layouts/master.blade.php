@@ -59,7 +59,7 @@
             <div class="absolute inset-0 bg-blue-700 opacity-75"> </div>
 
             <section class="layout-col ">
-                <div class="mx-auto w-full z-10 shadow-2xl border-l-4 border-orange-500 bg-white  overflow-hidden">
+                <div class="mx-auto w-full z-10 shadow-2xl border-l-4 border-orange-500 bg-white overflow-hidden">
                     <div class="sm:flex items-stretch">
                         @yield('sidebar')
 

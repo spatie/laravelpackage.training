@@ -28,7 +28,7 @@
 
         <div class="py-24 bg-blue-50">
 
-            <img loading="lazy" style="opacity: 0.035" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.jpg">
+            <img loading="lazy" style="opacity: 0.05" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.png">
 
             <section class="layout-col">
                 @include('front.home.partials.instructor')

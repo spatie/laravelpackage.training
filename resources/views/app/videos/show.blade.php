@@ -53,7 +53,7 @@
             <livewire:video-completed-button :video="$currentVideo" />
         </div>
 
-        <div class="text-lg markup-lists-alt markup-lists-spaced">
+        <div class="text-lg markup-lists-alt markup-lists-spaced markup-code">
             {!! $currentVideo->formatted_description !!}
         </div>
 

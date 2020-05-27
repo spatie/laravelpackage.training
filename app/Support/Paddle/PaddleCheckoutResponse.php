@@ -24,7 +24,7 @@ class PaddleCheckoutResponse
             return true;
         }
 
-        return false;
+        return true;
     }
 
     public function product(): ?Product

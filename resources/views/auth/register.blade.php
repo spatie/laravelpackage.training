@@ -8,8 +8,8 @@
 
     <h1>{{ __('Create account') }}</h1>
 
-    <p class="alert alert-info">
-        We only need the info below.
+    <p class="alert alert-info mb-12">
+        Let's create an account first. This account will be used later on to track your progress.
     </p>
 
     <form class="form-grid" method="POST" action="{{ route('register') }}">
@@ -59,7 +59,7 @@
 
         <div class="form-buttons">
             <button type="submit" class="button">
-                {{ __('Register') }}
+                <i class="fas fa-play text-orange-500 mr-3"></i> {{ __('Next: see purchase options') }}
             </button>
         </div>
     </form>

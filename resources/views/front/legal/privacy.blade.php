@@ -49,7 +49,7 @@ You are not obliged to provide us with your data; however, in case you refuse to
 3.2. Direct marketing:
 We only use our data for direct marketing purposes, in case you have given your explicit and prior consent (“opt-in”).
 
-Spatie may use your email address to send marketing as well as other news relating to the Laravel Package Training if you subscribed to Mailcoach’s direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
+Spatie may use your email address to send marketing as well as other news relating to the Laravel Package Training if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
 
 3.3. Transfer to third parties:
 In case of whole or partial reorganization or transfer of Spatie’s activities, whereby the Laraval Training Package reorganizes, transfers, ceases her business activity or in case of bankruptcy of Spatie, your data may be transferred to new entities or third parties.

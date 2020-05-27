@@ -23,9 +23,9 @@
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:creator" content="@spatie_be"/>
         <meta name="twitter:site" content="@spatie_be"/>
-        <meta name="twitter:title" content="Self-host your email newsletter"/>
+        <meta name="twitter:title" content="Learn how to create PHP and Laravel packages"/>
         <meta name="twitter:description"
-        content="Mailcoach is a self-hosted dashboard for email newsletters. Everything you’d expect from an email list manager —in a modern Laravel jacket."/>
+        content="The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages"/>
         <meta name="twitter:image" content="https://laravelpackage.training/images/social-card.jpg"/>
 
         <meta property="og:site_name" content="Laravel Package Training Video Course">

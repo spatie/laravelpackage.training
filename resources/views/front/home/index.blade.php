@@ -7,7 +7,7 @@
 @section('content')
     @include('front.partials.background')
 
-    <img loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="/images/paint-purple.jpg">
+    <img alt="dripping paint" loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="/images/paint-purple.jpg">
 
     <main class="z-20 shadow-xl">
             <section class="layout-col">
@@ -28,7 +28,7 @@
 
         <div class="py-24 bg-blue-50">
 
-            <img loading="lazy" style="opacity: 0.05" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.png">
+            <img alt="background pattern" loading="lazy" style="opacity: 0.05" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.png">
 
             <section class="layout-col">
                 @include('front.home.partials.instructor')

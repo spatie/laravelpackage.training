@@ -1,6 +1,6 @@
 <div class="py-6 flex items-center opacity-90 hover:opacity-100 | sm:py-2">
     <a href="{{ optional(auth()->user())->homeUrl() ?? '/' }}" class="block w-10 h-10">
-        <img src="/images/laravel-package-training.svg">
+        <img alt="Laravel package training logo" src="/images/laravel-package-training.svg">
     </a>
     <span class="ml-4 text-xl font-bold leading-tight">
         <a href="{{ optional(auth()->user())->homeUrl() ?? '/' }}">Laravel Package Training</a>

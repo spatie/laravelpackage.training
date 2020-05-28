@@ -48,7 +48,7 @@
 
             <div class="layout-col">
                 <div class="{{ isset($inversNav) && $inversNav ? 'border-b-2 border-light-100' : '' }} text-white py-6  | sm:flex sm:justify-between sm:items-center ">
-                    @include('front.partials.logo')
+                    @include('shared.partials.logo')
 
                     @include('shared.partials.nav')
                 </div>

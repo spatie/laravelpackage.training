@@ -46,8 +46,7 @@
                     allowfullscreen allowtransparency></iframe>
         </div>
 
-        <div class="flex justify-between items-baseline">
-
+        <div class="flex justify-between items-baseline my-6">
             <h2 class="mr-4">{{ $currentVideo->title }}</h2>
 
             <livewire:video-completed-button :video="$currentVideo" />

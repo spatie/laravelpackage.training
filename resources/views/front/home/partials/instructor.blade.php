@@ -45,7 +45,7 @@
                 Freek also has a passion for spreading his knowledge. In addition to regularly <a href="https://freek.dev/speaking#all-talks">speaking</a> at local user groups and some of the world's best conferences, he also publishes posts on PHP, Laravel, and programming in general at his <a href="https://freek.dev/originals">well-respected blog</a>.
             </p>
             <p class="mt-8">
-                <a href="https://twitter.com/freekmurze" target="_blank">
+                <a href="https://twitter.com/freekmurze" target="_blank"  rel="noopener noreferrer">
                     <i class="fab fa-twitter text-gray-300 mr-1"></i>@freekmurze
                 </a>
             </p>

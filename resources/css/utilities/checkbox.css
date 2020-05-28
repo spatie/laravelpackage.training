@@ -58,7 +58,7 @@
 }
 
 .checkbox:focus:before {
-    @apply border-orange-500;
+    @apply border-blue-500;
     @apply bg-white;
     @apply shadow-focus;
 }

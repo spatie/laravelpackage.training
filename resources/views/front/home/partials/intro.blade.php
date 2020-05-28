@@ -24,7 +24,7 @@
                 <div class="group absolute inset-0 grid place-center bg-gray-700 rounded-t shadow-xl | lg:rounded">
                     <img alt="Screenshot" class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300" src="/images/intro.jpg">
                     <span class="bg-dark-800 text-white rounded-sm px-3 py-1">
-                        <i class="fas fa-play text-orange-500"></i> <span class="ml-2 text-xs uppercase tracking-widest">Watch example</span>
+                        <i class="fas fa-play text-blue-300"></i> <span class="ml-2 text-xs uppercase tracking-widest">Watch example</span>
                     </span>
                 </div>
             </div>

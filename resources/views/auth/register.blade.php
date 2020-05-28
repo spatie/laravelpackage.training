@@ -59,7 +59,7 @@
 
         <div class="form-buttons">
             <button type="submit" class="button">
-                <i class="fas fa-play text-orange-500 mr-3"></i> {{ __('Next: buy the course') }}
+                <i class="fas fa-play text-blue-200 mr-3"></i> {{ __('Next: buy the course') }}
             </button>
         </div>
     </form>

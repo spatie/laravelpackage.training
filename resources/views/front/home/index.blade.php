@@ -26,9 +26,13 @@
 
         @include('front.home.partials.cta')
 
-        <div class="py-24 bg-blue-50">
 
-            <img alt="background pattern" loading="lazy" style="opacity: 0.05" class="absolute inset-0 w-full h-full" style="object-fit: cover; object-position: top center;" src="/images/instructor.png">
+        <div class="pb-24 bg-blue-50">
+            <div id="testimonials" class="mb-24">
+                <img alt="background pattern" loading="lazy" style="opacity: 0.075" class="absolute inset-0 w-full h-full" src="/images/instructor.png">           
+
+                @include('front.home.partials.testimonials')
+            </div>
 
             <section class="layout-col">
                 @include('front.home.partials.instructor')

@@ -28,7 +28,7 @@
         </div>
 
         <div class="form-row md:span-2">
-            <label for="email" class="label">{{ __('E-Mail Address') }}</label>
+            <label for="email" class="label">{{ __('Email Address') }}</label>
 
             @error('email')
                 <div class="form-error" role="alert">

@@ -1,6 +1,6 @@
 @if(session()->has('subscribed'))
     <p id="newsletter" class="px-4 py-2 shadow-xl bg-green-500 text-white rounded">
-        We have sent you an e-mail with a link to confirm your subscription
+        We have sent you an email with a link to confirm your subscription
     </p>
 @else
     <form
@@ -12,7 +12,7 @@
     >
         @csrf
         @honeypot
-        <input type="email" id="email" name="email" placeholder="Your e-mail address" class="flex-1 h-12 px-4 bg-white rounded-t-sm placeholder-gray-300 border border-r-0 border-transparent focus:border-orange-500 | sm:rounded-tr-none sm:rounded-l-sm" aria-label="E-mail" required>
+        <input type="email" id="email" name="email" placeholder="Your email address" class="flex-1 h-12 px-4 bg-white rounded-t-sm placeholder-gray-300 border border-r-0 border-transparent focus:border-orange-500 | sm:rounded-tr-none sm:rounded-l-sm" aria-label="Email" required>
         <input type="submit" name="submit" id="submit" value="Keep me posted" class="h-12 px-6 bg-blue-800 rounded-t-none rounded-b-sm font-semibold text-white hover:bg-blue-700 | sm:rounded-bl-none sm:rounded-r-sm">
     </form>
     @error('email')

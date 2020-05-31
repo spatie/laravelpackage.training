@@ -11,7 +11,7 @@
 
 This the Laravel Package Training privacy and cookie policy. Laravel Package Training is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, here hereafter referred to as Spatie.
 
-Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravelpackage.training](https://laravelpackage.training/); by creating an account, by contacting us by e-mail/phone, by subscribing for our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
+Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravelpackage.training](https://laravelpackage.training/); by creating an account, by contacting us by email/phone, by subscribing for our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 
 ## 1. General terms
 
@@ -49,7 +49,7 @@ You are not obliged to provide us with your data; however, in case you refuse to
 3.2. Direct marketing:
 We only use our data for direct marketing purposes, in case you have given your explicit and prior consent (“opt-in”).
 
-Spatie may use your email address to send marketing as well as other news relating to the Laravel Package Training if you subscribed to Mailcoach’s direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
+Spatie may use your email address to send marketing as well as other news relating to the Laravel Package Training if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
 
 3.3. Transfer to third parties:
 In case of whole or partial reorganization or transfer of Spatie’s activities, whereby the Laraval Training Package reorganizes, transfers, ceases her business activity or in case of bankruptcy of Spatie, your data may be transferred to new entities or third parties.

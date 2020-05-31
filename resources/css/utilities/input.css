@@ -38,7 +38,7 @@ input:read-only {
 
 .input-focus,
 .input:focus {
-    @apply border-orange-500;
+    @apply border-blue-500;
     @apply outline-none;
     @apply bg-white;
 }

@@ -18,7 +18,7 @@
                         {{ $purchase->price }}
                     </div>
                 </td>
-                <td class="td-action"><a href="{{ $purchase->receipt_url }}" target="_blank">View receipt</a></td>
+                <td class="td-action"><a href="{{ $purchase->receipt_url }}" target="_blank" rel="noopener noreferrer">View receipt</a></td>
             </tr>
         @endforeach
 

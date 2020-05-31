@@ -43,6 +43,7 @@ return [
             'title' => 'Bonus',
             'videos' => [
                 '424550560', // Using Psalm
+                '424566835' // Mark as completed button
             ]
         ]
     ]

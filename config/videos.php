@@ -38,6 +38,12 @@ return [
                 '420606741', // Response cache
                 '419946519' // Multitenancy
             ]
+        ],
+        [
+            'title' => 'Bonus',
+            'videos' => [
+                '424550560', // Using Psalm
+            ]
         ]
     ]
 ];

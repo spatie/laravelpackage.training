@@ -23,7 +23,8 @@
                     <li class="pb-3">Testing a package using PHPUnit</li>
                     <li class="pb-3">Automatically fix code style issues locally</li>
                     <li class="pb-3">Running the tests on GitHub actions</li>
-                    <li class="pb-3">Fixing code style issues using GitHub Actions </li>
+                    <li class="pb-3">Fixing code style issues using GitHub Actions</li>
+                    <li class="pb-3">Using Psalm to analyse and detect problems with your code</li>
                     <li class="pb-3">Supporting multiple PHP versions</li>
                     <li class="pb-3">Using semantic versioning </li>
                     <li class="pb-3">Keeping a changelog</li>

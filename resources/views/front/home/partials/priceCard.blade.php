@@ -56,23 +56,23 @@
     </div>
 
     <script type="text/javascript">
-        function indexOfFirstDigitInString(string)
-        {
-            let firstDigit = string.match(/\d/) // will give you the first digit in the string
-            return string.indexOf(firstDigit)
+        function indexOfFirstDigitInString(string) {
+            let firstDigit = string.match(/\d/);
+
+            return string.indexOf(firstDigit);
         }
 
         Paddle.Product.Prices(593300, function(prices) {
             console.log(prices);
             let priceString = prices.price.net;
 
-            let indexOFirstDigitInString = indexOfFirstDigitInString(priceString)
+            let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
 
             let price = priceString.substring(indexOFirstDigitInString);
-            price = price.replace('.00', '')
+            price = price.replace('.00', '');
 
-            let currencySymbol = priceString.substring(0,indexOFirstDigitInString)
-            currencySymbol = currencySymbol.replace('US', '')
+            let currencySymbol = priceString.substring(0,indexOFirstDigitInString);
+            currencySymbol = currencySymbol.replace('US', '');
 
             document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
             document.querySelector('[data-id="current-price"]').innerHTML = price;

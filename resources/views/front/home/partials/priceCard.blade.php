@@ -63,7 +63,8 @@
         }
 
         Paddle.Product.Prices(593300, function(prices) {
-            let priceString = prices.price.gross
+            console.log(prices);
+            let priceString = prices.price.net;
 
             let indexOFirstDigitInString = indexOfFirstDigitInString(priceString)
 

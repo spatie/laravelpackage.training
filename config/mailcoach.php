@@ -1,10 +1,12 @@
 <?php
 
+use Spatie\Mailcoach\Support\Editor\TextEditor;
+
 return [
     'mailer' => 'ses',
     'campaign_mailer' => 'ses',
     'transactional_mailer' => 'ses',
-    'editor' => \Spatie\Mailcoach\Support\Editor\TextEditor::class,
+    'editor' => TextEditor::class,
 
     'throttling' => [
         'enabled' => true,

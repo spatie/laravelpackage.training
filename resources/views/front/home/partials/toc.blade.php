@@ -25,6 +25,7 @@
                     <li class="pb-3">Running the tests on GitHub actions</li>
                     <li class="pb-3">Fixing code style issues using GitHub Actions</li>
                     <li class="pb-3">Using Psalm to analyse and detect problems with your code</li>
+                    <li class="pb-3">Generating code coverage reports using Xdebug</li>
                     <li class="pb-3">Supporting multiple PHP versions</li>
                     <li class="pb-3">Using semantic versioning </li>
                     <li class="pb-3">Keeping a changelog</li>

@@ -16,7 +16,7 @@
 
     <div class="my-8">
         <x-buy-button :product="$videosProduct">
-            <i class="fas fa-play text-blue-200 mr-3"></i> Purchase video course for ${{ $videosProduct->price }}
+            <i class="fas fa-play text-blue-200 mr-3"></i> Purchase video course
         </x-buy-button>
     </div>
 

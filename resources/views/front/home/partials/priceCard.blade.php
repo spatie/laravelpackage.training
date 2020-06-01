@@ -77,4 +77,3 @@
             document.querySelector('[data-id="current-price"]').innerHTML = price;
         });
     </script>
-</div>

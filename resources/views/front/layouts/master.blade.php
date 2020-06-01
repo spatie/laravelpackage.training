@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;display=swap">
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -38,6 +38,7 @@
         <meta property="og:description"
             content="@yield('description')"/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
+        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 
         <script src="/js/alpine.js" defer></script>
     </head>

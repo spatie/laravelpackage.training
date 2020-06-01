@@ -8,17 +8,16 @@
 
         <div class="my-8 text-center">
             <p class="inline-flex leading-none">
-                <span class="absolute right-full text-blue-300 text-xl mt-1 mr-2">$</span>
-                <span class="font-semibold text-blue-900 text-5xl tracking-wide">79</span>
+                <span class="absolute right-full text-blue-300 text-xl mt-1 mr-2" data-id="current-currency">$</span>
+                <span class="font-semibold text-blue-900 text-5xl tracking-wide" data-id="current-price">79</span>
                     <div style="transform: rotate(-5deg); left: 70%; top: 1rem" class="absolute w-16 h-16 flex items-center text-xs tracking-normal leading-tight bg-orange-500 text-white rounded-full shadow-xl">
                         <span>Ends on <span class="font-semibold">June 5<sup>th</sup></span></span>
                 </div>
             </p>
             <p class="mt-3 text-center uppercase font-medium text-sm text-gray-400">
                 <span class="uppercase tracking-widest">
-                    Instead of
+                    Introductory price
                 </span>
-                <span class="currency">$</span><del class="font-bold tracking-widest">149</del>
             </p>
         </div>
 
@@ -56,4 +55,30 @@
             </p>
         </div>
     </div>
+
+    <script type="text/javascript">
+        function indexOfFirstDigitInString(string)
+        {
+            let firstDigit = string.match(/\d/) // will give you the first digit in the string
+            return string.indexOf(firstDigit)
+        }
+
+        Paddle.Product.Prices(593300, function(prices) {
+            console.log(prices)
+            let priceString = prices.price.gross
+
+            let indexOFirstDigitInString = indexOfFirstDigitInString(priceString)
+
+            let price = priceString.substring(indexOFirstDigitInString);
+            price = price.replace('.00', '')
+
+            let currencySymbol = priceString.substring(0,indexOFirstDigitInString)
+
+            console.log (price, currencySymbol)
+
+            document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
+            document.querySelector('[data-id="current-price"]').innerHTML = price;
+
+        });
+    </script>
 </div>

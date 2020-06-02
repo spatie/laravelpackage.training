@@ -22,7 +22,7 @@ class AddBuyersToMailingListAndAddTag extends Command
                 $subscriber->removeTag('bought-mailcoach');
             });
 
-        $emailList = EmailList::where('name', 'Marketing')->first();
+        $emailList = EmailList::where('name', 'Laravel Package Training')->first();
 
         User::cursor()
             ->each(function (User $user) use ($emailList) {

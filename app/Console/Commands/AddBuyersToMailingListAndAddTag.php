@@ -3,14 +3,13 @@
 namespace App\Console\Commands;
 
 use App\Models\User;
-use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Spatie\Mailcoach\Models\EmailList;
 use Spatie\Mailcoach\Models\Subscriber;
 
-class TagSubscribersThatBoughtMailcoach extends Command
+class AddBuyersToMailingListAndAddTag extends Command
 {
-    protected $signature = 'mailcoach:tag-subscribers';
+    protected $signature = 'mailcoach:add-and-tag-buyers';
 
     protected $description = 'Tag all subscriber that bought mailcoach';
 
@@ -33,7 +32,6 @@ class TagSubscribersThatBoughtMailcoach extends Command
                 }
 
                 $this->addBoughMailCoachTag($user, $subscriber);
-                $this->addGrabbedFreeVideosTag($user, $subscriber);
             });
 
         $this->info('All done!');
@@ -41,35 +39,12 @@ class TagSubscribersThatBoughtMailcoach extends Command
 
     protected function addBoughMailCoachTag(User $user, Subscriber $subscriber): void
     {
-        if ($user->licenses->count() === 0) {
+        if ($user->purchases()->count() === 0) {
             return;
         }
 
-        $subscriber->addTag('bought-mailcoach');
+        $subscriber->addTag('bought-course');
 
         $this->info('Add bought tag to ' . $user->email);
-    }
-
-    protected function addGrabbedFreeVideosTag(User $user, Subscriber $subscriber): void
-    {
-        if (! $user->purchases()->where('payment_method', 'free')->first()) {
-            return;
-        }
-
-        if (! $user->created_at) {
-            return;
-        }
-
-        if (! $user->created_at->isAfter(Carbon::createFromFormat('Y-m-d H:i:s', '2020-03-16 00:00:00'))) {
-            return;
-        }
-
-        if (! $user->created_at->isBefore(Carbon::createFromFormat('Y-m-d H:i:s', '2020-03-18 00:00:00'))) {
-            return;
-        }
-
-        $subscriber->addTag('grabbed-free-videos');
-
-        $this->info('Add free video tag to ' . $user->email);
     }
 }

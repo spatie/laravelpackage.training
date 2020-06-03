@@ -66,5 +66,5 @@
 }
 
 .docs-menu ul li.active {
-    @apply text-blue-500;
+    @apply font-semibold;
 }

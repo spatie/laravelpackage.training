@@ -18,11 +18,12 @@
                                 <a
                                    href="{{ route('video-course.show', [$chapter, $video]) }}"
                                 >
-                                    @if(isset($currentVideo) && $currentVideo->id === $video->id)
-                                        <i style="left:-1.5rem; top:.275em; font-size: 10px" class="absolute fas fa-play text-orange-500"></i>
+                                    @if($video->hasBeenCompletedByCurrentUser())
+                                        <span title="completed" class="absolute top-0 left-0 -ml-12 sm:-ml-6 z-0 inline-flex items-center justify-center bg-white text-green-500 rounded-r-full w-4 h-4 text-sm">
+                                        &check;
+                                        </span>
                                     @endif
-
-                                    {{ $video->title }}
+                                    <span class="z-10">{{ $video->title }}</span>
                                 </a>
                             </li>
                         @empty

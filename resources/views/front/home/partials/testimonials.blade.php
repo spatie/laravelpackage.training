@@ -33,6 +33,17 @@
         </x-testimonial>
 
         <x-testimonial 
+            name="Craig Potter"
+            handle="@_CPotter"
+            href="https://twitter.com/_CPotter/status/1266266283365896195"
+            avatar="https://pbs.twimg.com/profile_images/749879274346340352/MrBtxyoi_400x400.jpg"
+        >
+            <p class="text-xl">
+           Purchased and started this yesterday… learnt something new in the first 15 minutes. Can't wait to carry on! Worth every penny…
+            </p>
+        </x-testimonial>
+
+        <x-testimonial 
             name="Ivan the Space Biker"
             handle="@jesseleite85"
             href="https://twitter.com/jesseleite85/status/1265630936269455361"

@@ -37,7 +37,11 @@ return [
                 '420789034', // Collection macros
                 '420809280', // Medialibrary,
                 '420606741', // Response cache
-                '419946519' // Multitenancy
+                '419946519', // Multitenancy
+                '426741940',  // laravel-short-schedule using
+                '426743340', // laravel-short-schedule under the hood
+                '426803489', // laravel-short-schedule testing
+
             ]
         ],
         [

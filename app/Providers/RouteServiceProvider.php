@@ -9,9 +9,6 @@ class RouteServiceProvider extends ServiceProvider
 {
     public function map()
     {
-        Route::mailcoach('mailcoach');
-        Route::sesFeedback('ses-feedback');
-
         $this
             ->mapWebRoutes()
             ->mapAppRoutes()

@@ -17,16 +17,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::unguard();
 
-        Gate::define('viewMailcoach', function (User $user) {
-            return $user->admin;
-        });
-
-        app()->singleton(Satis::class, function () {
-            return new Satis(new Client([
-                'auth' => ['user', config('services.satis.license')]
-            ]));
-        });
-
         app()->singleton(Vimeo::class, function () {
             return new Vimeo(new Client([
                 'headers' => [

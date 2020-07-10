@@ -4,8 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\User;
 use Illuminate\Console\Command;
-use Spatie\Mailcoach\Models\EmailList;
-use Spatie\Mailcoach\Models\Subscriber;
+use Illuminate\Support\Facades\Http;
 
 class AddBuyersToMailingListAndAddTag extends Command
 {
@@ -17,33 +16,24 @@ class AddBuyersToMailingListAndAddTag extends Command
     {
         $this->info('Tagging subscribers...');
 
-        Subscriber::cursor()
-            ->each(function (Subscriber $subscriber) {
-                $subscriber->removeTag('bought-mailcoach');
-            });
-
-        $emailList = EmailList::where('name', 'Laravel Package Training')->first();
-
         User::cursor()
-            ->each(function (User $user) use ($emailList) {
-                /** @var Subscriber $subscriber */
-                if (!$subscriber = Subscriber::where('email', $user->email)->first()) {
-                    $subscriber = Subscriber::createWithEmail($user->email)->skipConfirmation()->subscribeTo($emailList);
-                }
-
-                $this->addBoughMailCoachTag($user, $subscriber);
+            ->each(function (User $user) {
+                $this->addBoughMailCoachTag($user);
             });
 
         $this->info('All done!');
     }
 
-    protected function addBoughMailCoachTag(User $user, Subscriber $subscriber): void
+    protected function addBoughMailCoachTag(User $user): void
     {
         if ($user->purchases()->count() === 0) {
             return;
         }
 
-        $subscriber->addTag('bought-course');
+        Http::post('https://spatie.be/mailcoach/subscribe/4af46b59-3784-41a5-9272-6da31afa3a02', [
+            'email' => $user->email,
+            'tags' => 'laravelpackage-training;bought-course',
+        ]);
 
         $this->info('Add bought tag to ' . $user->email);
     }

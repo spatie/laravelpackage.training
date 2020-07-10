@@ -3,8 +3,8 @@
 namespace App\Http\Front\Controllers;
 
 use App\Http\Front\Requests\SubscribeToEmailListRequest;
-use Illuminate\Support\Facades\Http;
 use Exception;
+use Illuminate\Support\Facades\Http;
 
 class SubscribeToEmailListController
 {

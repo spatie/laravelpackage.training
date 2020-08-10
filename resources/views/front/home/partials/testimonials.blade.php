@@ -44,10 +44,10 @@
         </x-testimonial>
 
         <x-testimonial 
-            name="Ivan the Space Biker"
+            name="Ivan the Space Farmer"
             handle="@jesseleite85"
             href="https://twitter.com/jesseleite85/status/1265630936269455361"
-            avatar="https://pbs.twimg.com/profile_images/1248655930247520257/EoJIwoIx_400x400.jpg"
+            avatar="https://pbs.twimg.com/profile_images/1284174981337882624/9p7rSQiT_400x400.jpg"
         >
             <p class="text-xl">
             Can’t get much more real, @freekmurze and @spatie_be really are the whole package!
@@ -113,7 +113,7 @@
             name="/dev/caneco"
             handle="@Caneco"
             href="https://twitter.com/Caneco/status/1265644753435201538"
-            avatar="https://pbs.twimg.com/profile_images/1235336161964498946/eWS98Pai_400x400.jpg"
+            avatar="https://pbs.twimg.com/profile_images/1269932242668748802/TTUCha8v_400x400.jpg"
         >
             <p>
             Not learning how to create Laravel packages with @spatie_be, it's like having a movie where Luke Skywalker went to learn the Jedi skills with the Jawa tribe, instead of Yoda 🌱

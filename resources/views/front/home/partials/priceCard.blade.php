@@ -25,7 +25,7 @@
         </div>
 
         <p class="mt-12 text-center">
-            <a href="{{ route('register') }}" class="button text-xl">
+            <a href="{{ route('buy') }}" class="button text-xl">
                 Buy the complete course
             </a>
         </p>

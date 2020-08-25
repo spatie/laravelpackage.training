@@ -21,6 +21,4 @@ Route::post('subscribe', SubscribeToEmailListController::class)->middleware(Prot
 Route::view('terms-of-use', 'front.legal.terms-of-use')->name('termsOfUse');
 Route::view('privacy', 'front.legal.privacy')->name('privacy');
 
-Route::redirect('buy', 'https://laravelpackage.training/login')->name('buy');
-
-// Route::permanentRedirect('buy', 'https://spatie.be/products/laravel-package-training')->name('buy');
+Route::permanentRedirect('buy', 'https://spatie.be/products/laravel-package-training')->name('buy');

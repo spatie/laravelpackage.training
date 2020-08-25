@@ -3,7 +3,7 @@
         @guest
             <x-navigation-item :href="route('login')">Login</x-navigation-item>
             <li>
-                <a class="button block" href="/register">
+                <a class="button block" href="{{ route('buy') }}">
                     Buy course
                 </a>
             </li>

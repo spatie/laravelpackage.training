@@ -25,5 +25,5 @@
         </tbody>
     </table>
 @else
-    <p>You haven't made any purchases yet. Head over to the <a href="{{ route('buy')}}">shop</a>!</p>
+    <p>You haven't made any purchases yet. Head over to the <a href="{{ config('settings.buy_url')}}">shop</a>!</p>
 @endif

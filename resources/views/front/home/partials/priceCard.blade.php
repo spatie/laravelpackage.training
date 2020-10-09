@@ -25,7 +25,7 @@
         </div>
 
         <p class="mt-12 text-center">
-            <a href="{{ route('buy') }}" class="button text-xl">
+            <a href="{{ config('settings.buy_url') }}" class="button text-xl">
                 Buy the complete course
             </a>
         </p>

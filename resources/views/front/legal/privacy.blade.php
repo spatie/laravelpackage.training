@@ -38,7 +38,7 @@ Please read this privacy policy carefully, because it contains essential informa
 3.1. General purposes:
 Spatie will use the obtained personal data solely for the purposes mentioned below:
 
-- Category 1 and 4: maintaining and improving the website and the creation of anonymous statistics (the identity of particular persons or companies will not be traceable) based on the “legitimate interest” of Laravel Package Training to improve the service and website.
+- Category 1 and 4: maintaining and improving the website and the creation of anonymous statistics (the identity of particular persons or companies will not be traceable) based on the “legitimate interest” of Spatie to improve the service and website.
 - Category 2: managing your Spatie account on the website to purchase the Laravel Package Training Course.
 - Category 3: sending direct marketing mailings, newsletters, promotions, based on your prior explicit consent. Spatie will not send any emails without permission. We always offer the option to unsubscribe from our mailing list.
 
@@ -80,7 +80,7 @@ You have the right to object to the processing of your data in case you have ser
 In case the processing is based on prior consent, you have the right to withdraw this consent.
 
 5.5. Exercise of rights:
-You can exercise your rights by contacting us, either by email at info@spatie.be, provided that you add a copy of your ID card.
+You can exercise your rights by contacting us, either by email at support@spatie.be, provided that you add a copy of your ID card.
 
 5.6. Automated decisions and profiling:
 The processing of your data does not include profiling, nor shall you be subjected to automated decisions.

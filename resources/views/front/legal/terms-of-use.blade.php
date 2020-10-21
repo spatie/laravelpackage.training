@@ -7,7 +7,7 @@
 @section('article')
 
 @markdown
-These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravelpackage.training/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
+These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravelpackage.training/terms-of-use> by Spatie BVBA, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
 
 By buying and downloading our Course, You explicitly agree to these Terms of Use.
 
@@ -15,7 +15,7 @@ We reserve however the right, in our sole discretion, to change, modify, add or 
 
 We shall make sure that the latest version of these Terms of Use shall always be available on <https://laravelpackage.training/terms-of-use>.
 
-If you have any questions or concerns, you may contact us by at [info@spatie.be](mailto:info@spatie.be).
+If you have any questions or concerns, you may contact us by at [support@spatie.be](mailto:support@spatie.be).
 
 ## 1. Definitions
 
@@ -42,7 +42,7 @@ The following definitions apply to these Terms of Use:
 
 ## 4. Use of the Course
 
-4.1. Spatie is the owner or licensee of all rights in relation to the Course. All videos within the course are also copyrighted under applicable law.
+4.1. Spatie is the owner or licensee of all rights in relation to the Course. All videos within the Course are also copyrighted under applicable law.
 
 4.2. You shall not modify, copy, sublicence, lease, sell, publish, transmit, (re)distribute, perform, assign, disassemble, decompile, participate in the transfer or sale, create derivative works of, or in any way exploit, any of content of the Course, in whole or in part. Nor do You have the right to transfer the Course to third parties.
 

@@ -7,7 +7,7 @@
 @section('article')
 
 @markdown
-These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravelpackage.training/terms-of-use> by Spatie BVBA, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
+These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravelpackage.training/terms-of-use> by Spatie BVBA, with registered offices at Kruikstraat 22/12, 2018 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
 
 By buying and downloading our Course, You explicitly agree to these Terms of Use.
 

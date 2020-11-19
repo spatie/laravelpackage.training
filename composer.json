@@ -19,6 +19,7 @@
         "ext-openssl": "*",
         "ext-zip": "*",
         "aws/aws-sdk-php": "^3.128",
+        "blade-ui-kit/blade-ui-kit": "^0.2.0",
         "facade/ignition": "^2.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",

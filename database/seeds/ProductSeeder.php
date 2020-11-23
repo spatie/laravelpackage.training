@@ -7,7 +7,7 @@ class ProductSeeder extends Seeder
 {
     public function run()
     {
-        factory(Product::class)->create([
+        Product::factory()->create([
             'type' => Product::TYPE_VIDEOS,
             'name' => 'Laravel Package Training Video Course',
             'paddle_product_id' => '593300',

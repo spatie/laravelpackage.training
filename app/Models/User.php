@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Http\App\Controllers\BuyVideoCourseController;
 use App\Http\App\Controllers\VideosController;
 use App\Models\Concerns\HasUuid;
@@ -13,6 +14,8 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    use HasFactory;
+
     use Notifiable, HasUuid;
 
     protected $hidden = [

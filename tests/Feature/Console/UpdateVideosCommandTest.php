@@ -73,7 +73,7 @@ class UpdateVideosCommandTest extends TestCase
             ->andReturn([])
             ->once();
 
-        factory(Video::class)->create();
+        Video::factory()->create();
 
         config()->set('videos.chapters', []);
 

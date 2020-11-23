@@ -1,11 +1,11 @@
-@extends('auth.layouts.auth')
+@extends('auth.layouts.master')
 
 @section('title', 'Login')
 
 @section('description', 'Log in to view the Laravel Package Video Course')
 
 @section('auth')
-        <h1>{{ __('Login') }}</h1>
+    <h1>{{ __('Login') }}</h1>
 
     <div class="alert alert-info text-xl">
         The license and video section of Laravel Package Training has moved to a unified platform.

@@ -1,7 +1,7 @@
 <nav>
     <ul class="nav">
         @guest
-            <x-navigation-item :href="route('login')">Login</x-navigation-item>
+            <a href="{{ route('login') }}">Login</a>
             <li>
                 <a class="button block" href="{{ config('settings.buy_url') }}">
                     Buy course

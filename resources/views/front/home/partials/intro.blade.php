@@ -6,14 +6,14 @@
         </header>
 
         <p class="mt-12 text-xl text-white">
-            Having produced over <a href="https://packagist.org/?query=spatie">200 packages</a> with more than 75 million downloads in total, the <a href="https://spatie.be" target="_blank"  rel="noopener noreferrer" class="markup-link-invers">Spatie</a> team knows what they're talking about.
+            Having produced over <a href="https://packagist.org/?query=spatie">200 packages</a> with more than 75 million downloads in total, the <a href="{{spatieUrl()}}" target="_blank"  rel="noopener noreferrer" class="markup-link-invers">Spatie</a> team knows what they're talking about.
         </p>
          <p class="mt-4 text-xl text-white">
             Dive in the mind of the people that brought you quality packages like
-             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-permission/v3/introduction">laravel-permission</a></code>,
-             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-backup">laravel-backup</a></code>,
+             <code class="text-lg opacity-75"><a href="{{spatieUrl('https://docs.spatie.be/laravel-permission/v3/introduction')}}">laravel-permission</a></code>,
+             <code class="text-lg opacity-75"><a href="{{spatieUrl('https://docs.spatie.be/laravel-backup')}}">laravel-backup</a></code>,
              <code class="text-lg opacity-75"><a href="https://github.com/spatie/browsershot">browsershot</a></code>,
-             <code class="text-lg opacity-75"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a></code>
+             <code class="text-lg opacity-75"><a href="{{spatieUrl('https://docs.spatie.be/laravel-medialibrary')}}">laravel-medialibrary</a></code>
             and learn how to program, test, and maintain your very own packages.
         </p>
     </div>

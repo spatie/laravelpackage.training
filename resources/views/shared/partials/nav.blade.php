@@ -3,7 +3,7 @@
         @guest
             <a href="{{ route('login') }}">Login</a>
             <li>
-                <a class="button block" href="{{ config('settings.buy_url') }}">
+                <a class="button block" href="{{ spatieUrl(config('settings.buy_url')) }}">
                     Buy course
                 </a>
             </li>
@@ -11,7 +11,7 @@
 
         @auth
             @if(! auth()->user()->canAccessVideos())
-                <x-navigation-item :href="config('settings.buy_url')">Buy course</x-navigation-item>
+                <x-navigation-item :href="spatieUrl(config('settings.buy_url'))">Buy course</x-navigation-item>
             @endif
 
             @if(auth()->user()->canAccessVideos())

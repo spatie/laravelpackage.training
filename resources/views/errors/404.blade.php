@@ -1,12 +1,12 @@
 
-@extends('auth.layouts.auth')
+@extends('front.layouts.master')
 
 @section('title', 'Page not found')
 
 @section('auth')
 
-<h1>Aaaw… <br>We couldn't find this page</h1>
+    <h1>Aaaw… <br>We couldn't find this page</h1>
 
-<p>Let's get you back to <a class="markup-link" href="/">the homepage</a> and start form there.</p>
+    <p>Let's get you back to <a class="markup-link" href="/">the homepage</a> and start form there.</p>
 
 @endsection

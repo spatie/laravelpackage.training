@@ -39,7 +39,7 @@
             </section>
         </div>
 
-
+        @include('front.home.partials.relatedresources')
     </main>
 
 @endsection

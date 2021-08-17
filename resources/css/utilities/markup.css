@@ -141,6 +141,7 @@
 /* Link styles */
 
 .markup-links a,
+.markup-links span,
 .markup-link {
     @apply text-blue-500;
     @apply underline;

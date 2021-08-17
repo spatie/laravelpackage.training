@@ -127,6 +127,9 @@ module.exports = {
         textColor: ["responsive", "hover", "focus", "group-hover"],
         boxShadow: ["responsive", "hover", "focus", "focus-within"],
         backgroundColor: ["responsive", "hover", "focus", "group-hover"],
-        visibility: ["responsive", "hover", "focus", "group-hover"]
+        visibility: ["responsive", "hover", "focus", "group-hover"],
+        translate: ['group-hover', 'active'],
+        scale: ['group-hover'],
+        zIndex: ['hover']
     }
 };

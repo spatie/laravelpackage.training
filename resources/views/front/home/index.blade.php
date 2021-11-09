@@ -13,7 +13,7 @@
             <section class="layout-col">
                 @include('front.home.partials.intro')
 
-                <div class="mx-auto grid w-full max-w-lg z-10 shadow-2xl rounded | md:max-w-none">
+                <div class="mx-auto grid w-full mt-20 max-w-lg z-10 shadow-2xl rounded | md:max-w-none">
                     @include('front.home.partials.priceCard')
                 </div>
             </section>

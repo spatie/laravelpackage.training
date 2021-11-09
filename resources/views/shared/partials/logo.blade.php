@@ -3,7 +3,7 @@
         <img alt="Laravel package training logo" src="/images/laravel-package-training.svg">
     </a>
     <span class="ml-4 text-xl font-bold leading-tight">
-        <a href="/">Laravel Package Training</a>
+        <a href="/">Laravel Package Training <span class=" text-orange-400">v2</span></a>
         <span class="hidden sm:block md:absolute top-full left-0 text-xs font-normal opacity-50">A premium video course by <a href="{{ spatieUrl() }}" target="_blank"  rel="noopener noreferrer" class="markup-link-invers">Spatie</a></span>
     </span>
 </div>

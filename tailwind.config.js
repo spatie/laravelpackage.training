@@ -118,7 +118,7 @@ module.exports = {
                 90: "0.9"
             },
             rotate: {
-                12: '12deg'
+                12: "12deg"
             },
             minHeight: {
                 10: "2.5rem"

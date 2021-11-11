@@ -1,7 +1,6 @@
 <nav>
     <ul class="nav">
         @guest
-            <a href="{{ route('login') }}">Login</a>
             <li>
                 <a class="button block" href="{{ spatieUrl(config('settings.buy_url')) }}">
                     Buy course

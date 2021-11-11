@@ -39,7 +39,7 @@
                 Freek Van der Herten is a developer and partner at <a href="{{ spatieUrl() }}">Spatie</a>, a Belgium-based company specializing in creating Laravel apps.
             </p>
                 <p class="mt-4">
-                The company has an open-source first mentality. Freek and his team have released <a href="{{spatieUrl('https://spatie.be/open-source')}}">over 200 packages</a>, that are loved by the community, and which have been downloaded for over 75 million times.
+                The company has an open-source first mentality. Freek and his team have released <a href="{{spatieUrl('https://spatie.be/open-source')}}">over 250 packages</a>, that are loved by the community, and which have been downloaded for over 200 million times.
             </p>
              <p class="mt-4">
                 Freek also has a passion for spreading his knowledge. In addition to regularly <a href="https://freek.dev/speaking#all-talks">speaking</a> at local user groups and some of the world's best conferences, he also publishes posts on PHP, Laravel, and programming in general at his <a href="https://freek.dev/originals">well-respected blog</a>.

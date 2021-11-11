@@ -5,33 +5,35 @@
 
 </header>
 <div class="py-16 grid lg:cols-2 gap-16">
-    
+
 
     <div class="bg-white shadow-xl">
         <div class="   px-8 py-4">
             <h1
                 class="inline-block  mx-auto font-bold text-2xl left-1/2  bg-orange-400 px-4 py-2 transform -translate-y-8 shadow-xl">
-                Big 2021 Update</h1>
-            <p class=" border-b-2 border-blue-100 uppercase pb-8 font-medium text-sm tracking-widest text-blue-400">
-                Become the next package maestro
-                </p>
+                Big v2 update</h1>
         </div>
         <div class=" px-8 py-4">
             <ul class="mt-4 mb-12 markup-ul grid gap-4">
                 <li>
                     <div>
-                        Updated for <strong>PHP 8</strong>
+                        Vastly <strong>improved workflow</strong>
                     </div>
                 </li>
                 <li>
                     <div>
-                        Using the latest best practices
+                        Examples updated to use the <strong>PackageServiceProvider</strong>
+                    </div>
+                </li>
 
+                <li>
+                    <div>
+                        Updated for <strong>PHP 8, Laravel 8</strong>
                     </div>
                 </li>
                 <li>
                     <div>
-                        Glorious <strong>4K</strong> videos
+                        Using modern GitHub action workflows to run tests, update changelog and more
                     </div>
                 </li>
                 <li>
@@ -41,12 +43,7 @@
                 </li>
                 <li>
                     <div>
-                        packages are built using our popular spatie/package-skeleton-laravel template
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        using modern GitHub action workflows to run tests, update changelog and more
+                        Videos now in <strong>glorious 4K</strong>
                     </div>
                 </li>
             </ul>
@@ -59,7 +56,7 @@
             </a>
         </div>
 
-       
+
 
     </div>
     <div class="mx-auto max-w-3xl">

@@ -2,7 +2,7 @@
     <div class="p-12">
         <span class="flex flex-col justify-center items-center pb-4 border-b-2 border-blue-100">
             <h3 class="uppercase font-medium text-sm text-center tracking-widest text-blue-400">
-                4 hours of content
+                Become the next package maestro
             </h3>
         </span>
 

@@ -37,7 +37,7 @@
             <button class="absolute top-0 right-0 m-6 leading-none text-light-700 text-3xl">&times;</button>
             <div class="w-full max-w-screen-xl">
                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                    <iframe src="https://player.vimeo.com/video/418813035?autoplay=1"
+                    <iframe src="https://player.vimeo.com/video/644708807?h=2ea6d45615&autoplay=1"
                         class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0"
                         allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                 </div>

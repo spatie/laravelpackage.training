@@ -1,7 +1,7 @@
 
 <div class="py-16 grid lg:cols-2 gap-16">
     <header class="text-white" >
-        
+
 
             <div class="mx-auto max-w-3xl">
                 <div x-data="{
@@ -13,17 +13,17 @@
                           });
                     }
                 }">
-            
-                <h1 @click="scroll()" 
+
+                <h1 @click="scroll()"
                     class="inline-block  text-black cursor-pointer  mx-auto font-bold text-2xl left-1/2  bg-orange-400 px-4 py-2 transform shadow-xl">
                     Big v2 update</h1>
-            
+
                 </div>
-                
-            
+
+
                 <p class="font-bold font-serif text-3xl sm:text-5xl mt-8 leading-tight">Learn how to create <br>a Laravel package
                 </p>
-            
+
                 <h1 class="mt-2 mb-8 markup-baseline text-orange-400 opacity-100 text-2xl">Start this course and publish your first
                     package in the same day</h1>
 
@@ -44,11 +44,11 @@
                     and learn how to program, test, and maintain your very own packages.
                 </p>
             </div>
-    
+
     </header>
 
 
-    
+
 
 
     <div class="flex justify-center items-center " x-data="{ open: false }">
@@ -73,7 +73,7 @@
                 <button class="absolute top-0 right-0 m-6 leading-none text-light-700 text-3xl">&times;</button>
                 <div class="w-full max-w-screen-xl">
                     <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                        <iframe src="https://player.vimeo.com/video/418813035?autoplay=1"
+                        <iframe src="https://player.vimeo.com/video/644709295?autoplay=1"
                             class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0"
                             allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                     </div>

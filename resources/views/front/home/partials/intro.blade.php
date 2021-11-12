@@ -51,7 +51,7 @@
 
 
 
-    <div class="flex justify-center items-center " x-data="{ open: false }">
+    <div class="flex justify-center items-center " x-data="{ open: {{ request()->query('intro') ? 'true' : 'false' }} }">
         <div class="w-full max-w-3xl">
             <div role="button" class="aspect-16x9" @click="open = true">
                 <div class="group absolute inset-0 grid place-center bg-gray-700 rounded-t shadow-xl | lg:rounded">

@@ -12,18 +12,18 @@
                     class="flex flex-col items-center mb-6 text-center text-gray-700 text-xs leading-snug">
                     <div class="mt-4 font-bold text-orange-500">{{ $discount->name }} ending in</div>
                     <div
-                        class="bg-orange-500 text-white z-10 px-2 py-1"
+                        class="text-orange-500 z-10 px-2 py-1"
                         style="font-variant-numeric:tabular-nums">
                         <x-countdown :expires="$discount->expiresAt()">
-                        <span class=""><span
+                        <span class=""><span class="font-bold"
                                 x-text="timer.days">{{ $component->days() }}</span> <span class="">days</span></span>
-                            <span class=""><span
+                            <span class=""><span class="font-bold"
                                     x-text="timer.hours">{{ $component->hours() }}</span> <span
                                     class="">hours</span></span>
-                            <span class=""><span
+                            <span class=""><span class="font-bold"
                                     x-text="timer.minutes">{{ $component->minutes() }}</span> <span
                                     class="">minutes</span></span>
-                            <span class=""><span
+                            <span class=""><span class="font-bold"
                                     x-text="timer.seconds">{{ $component->seconds() }}</span> <span
                                     class="">seconds</span></span>
                         </x-countdown>
@@ -31,7 +31,7 @@
                 </div>
             @endif
 
-            <div class="flex justify-center my-8">
+            <div class="flex justify-center my-6">
                 <div>
                     <span class="font-bold text-5xl">{{ $price->formattedPrice() }}</span>
                     @if($discount->active)

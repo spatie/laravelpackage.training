@@ -58,7 +58,7 @@
                     <img alt="Screenshot"
                         class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
                         src="/images/introduction.jpg">
-                    <span class="bg-dark-800 text-white rounded-sm px-3 py-1">
+                    <span class="mt-32 bg-dark-800 text-white rounded-sm px-3 py-1">
                         <i class="fas fa-play text-blue-300"></i> <span
                             class="ml-2 text-xs uppercase tracking-widest">Watch
                             introduction</span>

@@ -49,11 +49,9 @@
 
 
 
-
-
-    <div class="flex justify-center items-center " x-data="{ open: false }">
+    <div class="flex justify-center items-center " x-data="{ open: {{ request()->query('intro')? 'true' : 'false' }} }">
         <div class="w-full max-w-3xl">
-            <div role="button" class="aspect-16x9" @click="open = true">
+            <div id="intro-button" role="button" class="aspect-16x9" @click="open = true">
                 <div class="group absolute inset-0 grid place-center bg-gray-700 rounded-t shadow-xl | lg:rounded">
                     <img alt="Screenshot"
                         class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
@@ -73,9 +71,11 @@
                 <button class="absolute top-0 right-0 m-6 leading-none text-light-700 text-3xl">&times;</button>
                 <div class="w-full max-w-screen-xl">
                     <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                        <iframe src="https://player.vimeo.com/video/644709295?autoplay=1"
+                        <iframe src="https://player.vimeo.com/video/644709295?autoplay={{ request()->query('intro')? 0 : 1 }}"
                             class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0"
-                            allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                            allow="autoplay fullscreen" 
+                            autoplay
+                            allowfullscreen @click.away="open = false"></iframe>
                     </div>
                 </div>
             </div>

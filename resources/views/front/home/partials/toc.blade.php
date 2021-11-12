@@ -15,6 +15,37 @@
     </p>
 </div>
 
+<div class="flex justify-center items-center mt-12" x-data="{ open: false }">
+    <div class="w-full max-w-3xl">
+        <div role="button" class="aspect-16x9" @click="open = true">
+            <div class="group absolute inset-0 grid place-center bg-gray-700 rounded-t shadow-xl | lg:rounded">
+                <img alt="Screenshot"
+                    class="absolute w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+                    src="/images/intro.jpg">
+                <span class="bg-dark-800 text-white rounded-sm px-3 py-1">
+                    <i class="fas fa-play text-blue-300"></i> <span
+                        class="ml-2 text-xs uppercase tracking-widest">Watch
+                        example</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <template x-if="open">
+        <div class="fixed inset-0 p-8 lg:p-16 bg-backdrop z-50 flex items-center justify-center"
+            @keydown.window.escape="open = false">
+            <button class="absolute top-0 right-0 m-6 leading-none text-light-700 text-3xl">&times;</button>
+            <div class="w-full max-w-screen-xl">
+                <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
+                    <iframe src="https://player.vimeo.com/video/418813035?autoplay=1"
+                        class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+
 <ol class="max-w-3xl mx-auto mt-12 grid gapy-8 markup-ol | lg:max-w-none">
     <li class="pt-8 text-xl">
         <div class="flex-grow">

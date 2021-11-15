@@ -24,8 +24,8 @@
                 <p class="font-bold font-serif text-3xl sm:text-5xl mt-8 leading-tight">Learn how to create <br>a Laravel package
                 </p>
 
-                <h1 class="mt-2 mb-8 markup-baseline text-orange-400 opacity-100 text-2xl">Start this course and publish your first
-                    package in the same day</h1>
+                <h1 class="mt-2 mb-8 markup-baseline text-orange-400 opacity-100 text-2xl">Start this course now and publish your first
+                    package today</h1>
 
                 <p class=" text-xl text-white">
                     Having produced over <a href="https://packagist.org/?query=spatie">250 packages</a> with more than 200
@@ -73,7 +73,7 @@
                     <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
                         <iframe src="https://player.vimeo.com/video/644709295?autoplay={{ request()->query('intro')? 0 : 1 }}"
                             class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0"
-                            allow="autoplay fullscreen" 
+                            allow="autoplay fullscreen"
                             autoplay
                             allowfullscreen @click.away="open = false"></iframe>
                     </div>

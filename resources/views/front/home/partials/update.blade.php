@@ -19,7 +19,7 @@
 
             <li>
                 <div>
-                    Updated for <strong>PHP 8, Laravel 8</strong>
+                    Updated for <strong>PHP 8.x, Laravel 8 and 9</strong>
                 </div>
             </li>
             <li>

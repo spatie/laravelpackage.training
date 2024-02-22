@@ -2,7 +2,7 @@
     <div class="   px-8 ">
         <h1
         class="inline-block  text-black cursor-pointer -translate-y-8  mx-auto font-bold text-2xl left-1/2  bg-orange-400 px-4 py-2 transform shadow-xl">
-        Big v2 update</h1>
+        Version 2</h1>
     </div>
     <div class=" px-8">
         <ul class=" mb-12 markup-ul grid gap-4">
@@ -19,7 +19,7 @@
 
             <li>
                 <div>
-                    Updated for <strong>PHP 8.x, Laravel 8 and 9</strong>
+                    Suitable for <strong>PHP 8.x, Laravel 8,9,10 and 11</strong>
                 </div>
             </li>
             <li>

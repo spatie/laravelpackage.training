@@ -16,7 +16,7 @@
 
                 <h1 @click="scroll()"
                     class="inline-block  text-black cursor-pointer  mx-auto font-bold text-2xl left-1/2  bg-orange-400 px-4 py-2 transform shadow-xl">
-                    Big v2 update</h1>
+                    Version 2</h1>
 
                 </div>
 
@@ -28,7 +28,7 @@
                     package today</h1>
 
                 <p class=" text-xl text-white">
-                    Having produced over <a href="https://packagist.org/?query=spatie">250 packages</a> with more than 200
+                    Having produced over <a href="https://packagist.org/?query=spatie">300 packages</a> with more than 900
                     million downloads in total, the <a href="{{spatieUrl()}}" target="_blank" rel="noopener noreferrer"
                         class="markup-link-invers ">Spatie</a> team knows what they're talking about.
                 </p>

@@ -19,7 +19,7 @@
 
             <li>
                 <div>
-                    Suitable for <strong>PHP 8.x, Laravel 8,9,10 and 11</strong>
+                    Suitable for <strong>PHP 8.x, Laravel 8, 9, 10 and 11</strong>
                 </div>
             </li>
             <li>

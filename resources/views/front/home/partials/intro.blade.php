@@ -28,8 +28,8 @@
                     package today</h1>
 
                 <p class=" text-xl text-white">
-                    Having produced over <a href="https://packagist.org/?query=spatie">300 packages</a> with more than 900
-                    million downloads in total, the <a href="{{spatieUrl()}}" target="_blank" rel="noopener noreferrer"
+                    Having produced almost <a href="https://packagist.org/?query=spatie">500 packages</a> with more than 1
+                    billion downloads in total, the <a href="{{spatieUrl()}}" target="_blank" rel="noopener noreferrer"
                         class="markup-link-invers ">Spatie</a> team knows what they're talking about.
                 </p>
                 <p class="mt-4 text-xl text-white">

@@ -68,7 +68,7 @@ return [
      * a `loading` attribute to the `img` tag. Here you can set the default
      * value of that attribute.
      *
-     * Possible values: 'auto', 'lazy' and 'eager,
+     * Possible values: 'auto', 'lazy' and 'eager',
      *
      * More info: https://css-tricks.com/native-lazy-loading/
      */

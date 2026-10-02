@@ -38,7 +38,6 @@
         <meta property="og:description"
             content="@yield('description')"/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
-        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 
         <script src="/js/alpine.js" defer></script>
     </head>

@@ -28,27 +28,10 @@ return [
         'token' => env('POSTMARK_TOKEN'),
     ],
 
-    'satis' => [
-        'license' => env('SATIS_LICENSE'),
-    ],
-
     'ses' => [
         'key' => env('SES_AWS_ACCESS_KEY_ID'),
         'secret' => env('SES_AWS_SECRET_ACCESS_KEY'),
         'region' => env('SES_AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-    'vimeo' => [
-        'client' => env('VIMEO_CLIENT'),
-        'secret' => env('VIMEO_SECRET'),
-        'access' => env('VIMEO_ACCESS'),
-    ],
-
-    'github' => [
-        'username' => env('GITHUB_USERNAME'),
-        'token' => env('GITHUB_TOKEN'),
-        'client_id' => env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_SECRET'),
-        'redirect' => env('GITHUB_REDIRECT_URI')
-    ],
 ];

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
@@ -60,3 +61,12 @@ it('shows the static pages', function (string $url, string $text) {
     ['/terms-of-use', 'Terms of use'],
     ['/privacy', 'Privacy'],
 ]);
+
+it('serves every page without a database connection', function () {
+    fakePriceApi();
+
+    collect(['/', '/login', '/terms-of-use', '/privacy', '/up'])
+        ->each(fn (string $url) => $this->get($url)->assertOk());
+
+    expect(DB::getConnections())->toBeEmpty();
+});

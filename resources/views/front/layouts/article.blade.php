@@ -7,12 +7,6 @@
         <div class="mx-auto max-w-3xl">
             <div class="markup markup-links markup-lists-alt">
                 
-                @if(flash()->message)
-                    <div class="mb-12 alert {{ flash()->class }}">
-                        {{ flash()->message }}
-                    </div>
-                @endif
-
                 @yield('article')
             </div>
         </div>

@@ -1,3 +1,4 @@
+@use('Spatie\PriceApi\SpatiePriceApi')
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,6 +22,7 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
         @include('shared.partials.favicon')
+        @include('shared.partials.referrer')
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:creator" content="@spatie_be"/>
@@ -39,6 +41,7 @@
             content="@yield('description')"/>
         <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
 
+        {{ SpatiePriceApi::scripts() }}
         <script src="/js/alpine.js" defer></script>
     </head>
     <body class="flex flex-col w-full min-h-screen">

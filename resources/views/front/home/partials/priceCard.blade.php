@@ -6,42 +6,31 @@
             </h3>
         </span>
 
-        @if($couldFetchPrice)
-            @if($discount->active)
+        <div x-data="spatiePrice({{ config('services.spatie_prices_api.purchasable_id') }})" x-init="init()" x-show="couldFetchPrice" style="display: none">
+            <div
+                x-show="discount.active"
+                style="display: none"
+                class="flex flex-col items-center mb-6 text-center text-gray-700 text-xs leading-snug">
+                <div class="mt-4 font-bold text-orange-500"><span x-text="discount.name"></span> ending in</div>
                 <div
-                    class="flex flex-col items-center mb-6 text-center text-gray-700 text-xs leading-snug">
-                    <div class="mt-4 font-bold text-orange-500">{{ $discount->name }} ending in</div>
-                    <div
-                        class="text-orange-500 z-10 px-2 py-1"
-                        style="font-variant-numeric:tabular-nums">
-                        <x-countdown :expires="$discount->expiresAt()">
-                        <span class=""><span class="font-bold"
-                                x-text="timer.days">{{ $component->days() }}</span> <span class="">days</span></span>
-                            <span class=""><span class="font-bold"
-                                    x-text="timer.hours">{{ $component->hours() }}</span> <span
-                                    class="">hours</span></span>
-                            <span class=""><span class="font-bold"
-                                    x-text="timer.minutes">{{ $component->minutes() }}</span> <span
-                                    class="">minutes</span></span>
-                            <span class=""><span class="font-bold"
-                                    x-text="timer.seconds">{{ $component->seconds() }}</span> <span
-                                    class="">seconds</span></span>
-                        </x-countdown>
-                    </div>
+                    class="text-orange-500 z-10 px-2 py-1"
+                    style="font-variant-numeric:tabular-nums">
+                    <span class=""><span class="font-bold" x-text="countdown.days"></span> <span class="">days</span></span>
+                    <span class=""><span class="font-bold" x-text="countdown.hours"></span> <span class="">hours</span></span>
+                    <span class=""><span class="font-bold" x-text="countdown.minutes"></span> <span class="">minutes</span></span>
+                    <span class=""><span class="font-bold" x-text="countdown.seconds"></span> <span class="">seconds</span></span>
                 </div>
-            @endif
+            </div>
 
             <div class="flex justify-center my-6">
                 <div>
-                    <span class="font-bold text-5xl">{{ $price->formattedPrice() }}</span>
-                    @if($discount->active)
-                        <span class="absolute right-full mr-4 top-0 mt-2">
-                             <span class="text-gray-500 line-through">{{ $priceWithoutDiscount->formattedPrice() }}</span>
-                        </span>
-                    @endif
+                    <span class="font-bold text-5xl" x-text="price"></span>
+                    <span class="absolute right-full mr-4 top-0 mt-2" x-show="discount.active" style="display: none">
+                        <span class="text-gray-500 line-through" x-text="priceWithoutDiscount"></span>
+                    </span>
                 </div>
             </div>
-        @endif
+        </div>
 
         <p class="mt-2 text-center">
             <a href="{{ spatieUrl(config('settings.buy_url')) }}" class="button text-xl">

@@ -11,10 +11,8 @@ beforeEach(function () {
 it('subscribes an email address to the newsletter', function () {
     Http::fake(['spatie.be/mailcoach/subscribe/*' => Http::response()]);
 
-    $this->from('/')
-        ->post('/subscribe', ['email' => 'freek@spatie.be'])
-        ->assertRedirect('/')
-        ->assertSessionHas('subscribed');
+    $this->post('/subscribe', ['email' => 'freek@spatie.be'])
+        ->assertRedirect('/?subscribed=1');
 
     Http::assertSent(fn ($request) => str_starts_with($request->url(), 'https://spatie.be/mailcoach/subscribe/')
         && $request['email'] === 'freek@spatie.be'
@@ -24,10 +22,8 @@ it('subscribes an email address to the newsletter', function () {
 it('requires a valid email address', function () {
     Http::fake();
 
-    $this->from('/')
-        ->post('/subscribe', ['email' => 'not-an-email'])
-        ->assertRedirect('/')
-        ->assertSessionHasErrors('email');
+    $this->post('/subscribe', ['email' => 'not-an-email'])
+        ->assertRedirect('/?subscription-failed=1');
 
     Http::assertNothingSent();
 });

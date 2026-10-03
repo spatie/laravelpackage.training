@@ -20,8 +20,6 @@ class SubscribeToEmailListController
             throw new Exception('Could not subscribe');
         }
 
-        session()->flash('subscribed');
-
-        return back();
+        return redirect()->action(HomeController::class, ['subscribed' => 1]);
     }
 }

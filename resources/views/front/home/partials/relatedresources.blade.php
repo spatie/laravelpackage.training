@@ -7,7 +7,7 @@
                 <a href="https://testing-laravel.com/" class="group max-w-xs">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="750 " height="900" alt="Testing Laravel " src="images/testing-laravel.jpg">
+                        <img width="600" height="720" alt="Testing Laravel " src="images/testing-laravel.webp">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="text-lg">
@@ -21,7 +21,7 @@
                 <a href="https://event-sourcing-laravel.com"  class="group max-w-xs markup-links">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="750 " height="900" alt="Front Line PHP" src="images/event-sourcing.jpg">
+                        <img width="600" height="720" alt="Front Line PHP" src="images/event-sourcing.webp">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="text-lg">
@@ -35,7 +35,7 @@
                 <a href="https://laravel-beyond-crud.com" class="group max-w-xs">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="750 " height="900" alt="Laravel Beyond Crud" src="images/crud.jpg">
+                        <img width="600" height="720" alt="Laravel Beyond Crud" src="images/crud.webp">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class=" text-lg">
@@ -50,7 +50,7 @@
                 <a class="group max-w-xs" href="https://front-line-php.com">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="750 " height="900" alt="Front Line PHP" src="images/flphp.jpg">
+                        <img width="600" height="720" alt="Front Line PHP" src="images/flphp.webp">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="text-lg">

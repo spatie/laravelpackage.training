@@ -7,18 +7,17 @@
         </span>
 
         <div x-data="spatiePrice({{ config('services.spatie_prices_api.purchasable_id') }})" x-init="init()" x-show="couldFetchPrice" style="display: none">
-            <div
-                x-show="discount.active"
-                style="display: none"
-                class="flex flex-col items-center mb-6 text-center text-gray-700 text-xs leading-snug">
-                <div class="mt-4 font-bold text-orange-500"><span x-text="discount.name"></span> ending in</div>
-                <div
-                    class="text-orange-500 z-10 px-2 py-1"
-                    style="font-variant-numeric:tabular-nums">
-                    <span class=""><span class="font-bold" x-text="countdown.days"></span> <span class="">days</span></span>
-                    <span class=""><span class="font-bold" x-text="countdown.hours"></span> <span class="">hours</span></span>
-                    <span class=""><span class="font-bold" x-text="countdown.minutes"></span> <span class="">minutes</span></span>
-                    <span class=""><span class="font-bold" x-text="countdown.seconds"></span> <span class="">seconds</span></span>
+            <div x-show="discount.active" style="display: none">
+                <div class="flex flex-col items-center mb-6 text-center text-gray-700 text-xs leading-snug">
+                    <div class="mt-4 font-bold text-orange-500"><span x-text="discount.name"></span> ending in</div>
+                    <div
+                        class="text-orange-500 z-10 px-2 py-1"
+                        style="font-variant-numeric:tabular-nums">
+                        <span class=""><span class="font-bold" x-text="countdown.days"></span> <span class="">days</span></span>
+                        <span class=""><span class="font-bold" x-text="countdown.hours"></span> <span class="">hours</span></span>
+                        <span class=""><span class="font-bold" x-text="countdown.minutes"></span> <span class="">minutes</span></span>
+                        <span class=""><span class="font-bold" x-text="countdown.seconds"></span> <span class="">seconds</span></span>
+                    </div>
                 </div>
             </div>
 

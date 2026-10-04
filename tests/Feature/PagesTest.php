@@ -69,3 +69,13 @@ it('serves every page without a database connection', function () {
 
     expect(DB::getConnections())->toBeEmpty();
 });
+
+it('serves the testimonial avatars itself', function () {
+    $html = $this->get('/')->assertOk()->assertDontSee('pbs.twimg.com')->getContent();
+
+    preg_match_all('#src="'.preg_quote(asset('images/testimonials/'), '#').'([^"]+)"#', $html, $matches);
+
+    $avatarPaths = array_map(fn (string $avatar) => public_path("images/testimonials/{$avatar}"), $matches[1]);
+
+    expect($avatarPaths)->toHaveCount(12)->each->toBeFile();
+});

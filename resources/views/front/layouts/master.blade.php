@@ -30,7 +30,7 @@
         <meta name="twitter:title" content="@yield('title')"/>
         <meta name="twitter:description"
         content="@yield('description')"/>
-        <meta name="twitter:image" content="https://laravelpackage.training/images/social-card.jpg"/>
+        <meta name="twitter:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         <meta property="og:site_name" content="Laravel Package Training">
         <meta property="og:locale" content="en_US">
@@ -39,10 +39,10 @@
         <meta property="og:title" content="@yield('title')"/>
         <meta property="og:description"
             content="@yield('description')"/>
-        <meta property="og:image" content="https://laravelpackage.training/images/social-card.jpg"/>
+        <meta property="og:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         {{ SpatiePriceApi::scripts() }}
-        <script src="/js/alpine.js" defer></script>
+        <script src="{{ asset('js') }}/alpine.js" defer></script>
     </head>
     <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')

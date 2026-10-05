@@ -32,7 +32,7 @@
         </div>
 
         <p class="mt-2 text-center">
-            <a href="{{ spatieUrl(config('settings.buy_url')) }}" class="button text-xl">
+            <a href="{{ config('settings.buy_url') }}" class="button text-xl">
                 Buy the complete course
             </a>
         </p>

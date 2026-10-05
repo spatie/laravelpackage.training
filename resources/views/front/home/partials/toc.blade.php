@@ -110,10 +110,10 @@
                 <li class="pb-3"><a href="https://github.com/spatie/laravel-tail">laravel-tail</a>: how to package up a
                     simple artisan command to reuse in all your projects and share with the community
                 </li>
-                <li class="pb-3"><a href="{{spatieUrl('https://docs.spatie.be/laravel-medialibrary')}}">laravel-medialibrary</a>:
+                <li class="pb-3"><a href="https://docs.spatie.be/laravel-medialibrary">laravel-medialibrary</a>:
                     learn how we structured this big package to keep it maintainable
                 </li>
-                <li class="pb-3"><a href="{{spatieUrl('https://docs.spatie.be/laravel-multitenancy')}}">laravel-multitenancy</a>:
+                <li class="pb-3"><a href="https://docs.spatie.be/laravel-multitenancy">laravel-multitenancy</a>:
                     this source dive shows how a complicated package can remain lightweight. Lots of things to learn
                     about the Laravel internals too.
                 </li>

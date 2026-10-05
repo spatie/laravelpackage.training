@@ -42,7 +42,7 @@
     </div>
 
     <div class="flex justify-center pb-8">
-        <a href="{{ spatieUrl(config('settings.buy_url')) }}" class=" button text-xl">
+        <a href="{{ config('settings.buy_url') }}" class=" button text-xl">
             Buy the complete course
         </a>
     </div>

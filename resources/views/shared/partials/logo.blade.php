@@ -1,6 +1,6 @@
 <div class="py-6 flex items-center opacity-90 hover:opacity-100 | sm:py-2">
     <a href="/" class="block w-10 h-10">
-        <img alt="Laravel package training logo" src="{{ asset('images') }}/laravel-package-training.svg">
+        <img alt="Laravel package training logo" src="{{ asset('images/laravel-package-training.svg') }}">
     </a>
     <span class="ml-4 text-xl font-bold leading-tight">
         <a href="/">Laravel Package Training <span class=" text-orange-400">v2</span></a>

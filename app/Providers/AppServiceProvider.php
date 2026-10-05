@@ -16,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
             'success' => 'alert-success',
             'error' => 'alert-error',
         ]);
+
+        $this->throwOnFailedAssetUploads();
     }
 
     public function boot(): void
@@ -42,5 +44,14 @@ class AppServiceProvider extends ServiceProvider
         URL::useAssetOrigin($bucketAssetsUrl);
 
         config()->set('app.mix_url', $bucketAssetsUrl);
+    }
+
+    /**
+     * Laravel Cloud replaces the config of the disk of an attached bucket and
+     * turns off throwing, which would let a failed asset upload pass silently.
+     */
+    protected function throwOnFailedAssetUploads(): void
+    {
+        config()->set('filesystems.disks.assets.throw', true);
     }
 }

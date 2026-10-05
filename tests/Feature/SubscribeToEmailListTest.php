@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
@@ -14,7 +15,7 @@ it('subscribes an email address to the newsletter', function () {
     $this->post('/subscribe', ['email' => 'freek@spatie.be'])
         ->assertRedirect('/?subscribed=1');
 
-    Http::assertSent(fn ($request) => str_starts_with($request->url(), 'https://spatie.be/mailcoach/subscribe/')
+    Http::assertSent(fn (Request $request) => str_starts_with($request->url(), 'https://spatie.be/mailcoach/subscribe/')
         && $request['email'] === 'freek@spatie.be'
         && $request['tags'] === 'laravelpackage-training');
 });

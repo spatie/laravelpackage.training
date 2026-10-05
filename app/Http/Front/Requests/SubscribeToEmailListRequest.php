@@ -8,6 +8,7 @@ class SubscribeToEmailListRequest extends FormRequest
 {
     protected $redirect = '/?subscription-failed=1';
 
+    /** @return array<string, array<int, string>> */
     public function rules(): array
     {
         return [

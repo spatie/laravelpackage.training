@@ -42,7 +42,7 @@
         <meta property="og:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         {{ SpatiePriceApi::scripts() }}
-        <script src="{{ asset('js') }}/alpine.js" defer></script>
+        <script src="{{ asset('js/alpine.js') }}" defer></script>
     </head>
     <body class="flex flex-col w-full min-h-screen">
         @include('shared.partials.scoop')

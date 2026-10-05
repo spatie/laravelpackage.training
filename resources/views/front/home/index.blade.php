@@ -7,7 +7,7 @@
 @section('content')
     @include('front.partials.background')
 
-    <img alt="dripping paint" loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="{{ asset('images') }}/paint-purple.webp">
+    <img alt="dripping paint" loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="{{ asset('images/paint-purple.webp') }}">
 
     <main class="z-20 shadow-xl">
             <section class="layout-col">
@@ -32,7 +32,7 @@
 
         <div class="pb-24 bg-blue-50">
             <div id="testimonials" class="mb-24">
-                <img alt="background pattern" loading="lazy" style="opacity: 0.075" class="absolute inset-0 w-full h-full" src="{{ asset('images') }}/instructor.webp">           
+                <img alt="background pattern" loading="lazy" style="opacity: 0.075" class="absolute inset-0 w-full h-full" src="{{ asset('images/instructor.webp') }}">           
 
                 @include('front.home.partials.testimonials')
             </div>

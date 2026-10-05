@@ -24,7 +24,7 @@
         <header class="mb-12 flex items-center">
             <span class="mr-4 flex-none w-24 h-24 rounded-full overflow-hidden shadow-lg border-2 border-white">
                 <img alt="Freek avatar" class="w-24 h-24 object-cover rounded-full overflow-hidden"
-                     src="{{ asset('images') }}/freek.webp">
+                     src="{{ asset('images/freek.webp') }}">
             </span>
             <div>
                 <h2 class="markup-h1">
